@@ -1,0 +1,25 @@
+html,
+body {
+  background-color: #e0b78d; /* burlywood */
+  font-family: "Verdana", sans-serif;
+  text-align: center;
+}
+
+#main {
+  width: 100%;
+}
+
+#img-div {
+  max-width: 100%;
+  display: center;
+  height: auto;
+  margin: auto;
+}
+
+#img-caption {
+  padding-top: 5px;
+}
+
+ul {
+  text-align: left;
+}
