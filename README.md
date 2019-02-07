@@ -13,10 +13,10 @@ The course covers;
 and then culminates with five projects for the student to complete in order to be certified.
 
 The projects are;  
-* Build a Tribute Page  
-* Build a Survey Form  
-* Build a Product Landing Page  
-* Build a Technical Documentation Page  
-* Build a Personal Porfolio Webpage  
+- [x] Build a Tribute Page  
+- [ ] Build a Survey Form  
+- [ ] Build a Product Landing Page  
+- [ ] Build a Technical Documentation Page  
+- [ ] Build a Personal Porfolio Webpage  
 
 ##### ~/freeCodeCamp/fccWebDesignProjects
