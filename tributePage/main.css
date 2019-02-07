@@ -9,11 +9,18 @@ body {
   width: 100%;
 }
 
-#img-div {
+#image {
+  display: block;
+  height: auto;
+  margin: auto;
   max-width: 100%;
+}
+
+#img-div {
   display: center;
   height: auto;
   margin: auto;
+  max-width: 100%;
 }
 
 #img-caption {
