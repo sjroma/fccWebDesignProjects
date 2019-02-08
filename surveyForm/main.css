@@ -1,0 +1,114 @@
+html,
+body {
+  background-color: lightgreen;
+  background-color: #E2F4DC;
+  font-family: "Lucinda Sans", sans-serif;
+  text-align: center;
+}
+
+#container {
+  background-color: #F9F9F9;
+  margin: 0 auto;
+  max-width: 80%;
+  padding: 20px;
+}
+
+#description {
+  font-size: larger;
+  font-weight: 600;
+}
+
+input:required {
+  background-color: lightyellow;
+}
+
+.name {
+  padding-bottom: 5px;
+}
+
+.email {
+  padding-bottom: 5px;
+}
+
+.age {
+  padding-bottom: 5px;
+}
+
+#number-label {
+  padding-right: 20px;
+}
+
+em {
+  color: red;
+}
+
+.input-area {
+  font-size: small;
+  height: 25px;
+  padding-left: 10px;
+  width: 280px;
+}
+
+.dropdown {
+  font-size: small;
+  height: 35px;
+}
+
+.gear-worn {
+  margin: 0 auto;
+  max-width: 55%;
+  min-width: 95%;
+  padding-top: 30px;
+}
+
+.protective-gear {
+  margin-left: 15px;
+  margin-right: 5px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+.col-75 {
+  float: left;
+  width: 55%;
+  margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+textarea {
+  background-color: #F9F9F9;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: small;
+  height: 150px;
+  padding: 10px 15px;
+  resize: none;
+  width: 100%;
+}
+
+button {
+  background-color: #59ACE0;
+  border-radius: 4px;
+  color: white;
+  cursor: pointer;
+  font-size: 15px;
+  height: 40px;
+  width: 80px;
+}
