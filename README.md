@@ -14,7 +14,7 @@ and then culminates with five projects for the student to complete in order to b
 
 The projects are;  
 - [x] Build a Tribute Page  
-- [ ] Build a Survey Form  
+- [x] Build a Survey Form  
 - [ ] Build a Product Landing Page  
 - [ ] Build a Technical Documentation Page  
 - [ ] Build a Personal Porfolio Webpage  
