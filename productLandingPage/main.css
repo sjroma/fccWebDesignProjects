@@ -1,0 +1,161 @@
+body {
+  background-image: url("images/parchmentBG.jpg");
+  background-repeat: no-repeat;
+  background-size: cover; /*resize image to cover entire container*/
+  position: relative;
+  background-color: #EBD5B3; /*if image is not available*/
+  font-family: sans-serif;
+}
+
+.wrapper {
+/*  // border: 1px solid red;*/
+  display: flex;
+  flex-direction: column;
+}
+
+#nav-bar {
+  background-color: #EBD5B3;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  min-height: 50px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+#nav-bar a {
+  color: #423B32;
+  padding-right: 25px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.begin {
+  padding-top: 50px; /*account for the fixed navbar*/
+}
+
+h2 {
+  padding-top: 50px; /*account for fixed navbar*/
+}
+
+.box-container {
+  border: 1px solid red;
+  display: flex;
+  flex-wrap: wrap;
+  height: 500px;
+  justify-content: space-around;
+}
+  
+#box-1 {
+  background-color: lightgray;
+  width: 30%;
+  height: 50%; 
+}
+
+#box-2 {
+  background-color: lightcyan;
+  width: 30%;
+  height: 50%;
+}
+
+#box-3 {
+  background-color: lightblue;
+  width: 30%;
+  height: 50%;
+}
+
+#box-4 {
+  background-color: lightcoral;
+  width: 30%;
+  height: 50%;
+}
+
+#box-5 {
+  background-color: lightgoldenrodyellow;
+  width: 30%;
+  height: 50%;
+}
+
+#video {
+  // height: 545px;
+  // width: 620px;
+  max-width: 100%;
+  transition: ease-in-out; /*so the transition isn't jumpy*/
+}
+
+.signup em {
+  color: red;
+}
+
+:required {
+  background-color: #FFFFE0;
+}
+
+ .signup-title, .name, .email {
+  color: #423B32;
+  font-weight: 500;
+  padding-bottom: 5px;
+}
+
+.input-area {
+  border-radius: 4px;
+  font-size: small;
+  height: 25px;
+  padding-left: 10px;
+  width: 280px;
+}
+
+.button {
+  background-color: #FFC;
+  border: none;
+  border-radius: 4px;
+  color: black;
+  cursor: pointer;
+  font-size: 15px;
+  height: 40px;
+  width: auto;
+}
+
+section, footer {
+  text-align: center;
+  background: rgba(0,0,0,0.2);
+  border-radius: 4px;
+  padding: 20px;
+  margin: 20px 0;
+  color: white;
+  font-weight: 100;
+  a {
+    text-decoration: none;
+  }
+}
+
+footer p {
+  color: #423B32;
+  font-weight: 500;
+}
+
+@media all and (max-width:500px) {
+  .flex-nav a {
+    flex-basis: 100%;
+  }
+  
+  /* Flex Container */
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Flex Item */
+  .wrapper > * {
+    order: 999;
+  }
+  
+  .flex-nav {
+    order: 1;
+  }
+  
+  .signup {
+    order: 2;
+  }
+}
