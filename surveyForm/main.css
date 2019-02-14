@@ -23,16 +23,12 @@ input:required {
   background-color: lightyellow;
 }
 
-.name {
+.name, .email, .age {
   padding-bottom: 5px;
 }
 
-.email {
-  padding-bottom: 5px;
-}
-
-.age {
-  padding-bottom: 5px;
+input[type=text], input[type=email], input[type=number] {
+  border-radius: 4px;
 }
 
 #number-label {
@@ -60,6 +56,10 @@ em {
   max-width: 55%;
   min-width: 95%;
   padding-top: 30px;
+}
+
+.fieldset {
+  border-radius: 4px;
 }
 
 .protective-gear {
