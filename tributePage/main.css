@@ -27,6 +27,17 @@ body {
   padding-top: 5px;
 }
 
+#tribute-info {
+  margin: 0 auto;
+  max-width: 75%;
+  min-width: 85%;
+}
+
+em {
+  font-weight: 600;
+}
+
 ul {
+  list-style-type: none;
   text-align: left;
 }
