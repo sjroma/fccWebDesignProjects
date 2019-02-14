@@ -15,7 +15,9 @@
   <h1 id="title">Motorcyclist's Survey</h1>
   <div id="container">
     <p id="description">A Personal Protection Questionaire</p>
+
     <form id="survey-form">
+
       <div id="personal-info">
         <div class="name">
           <label for="name" id="name-label">Name <em>*</em></label>
@@ -30,6 +32,7 @@
           <input class="input-area" id="number" type="number" placeholder="Age" pattern="[18-99]{2}" min="18" , max="99">
         </div>
       </div>
+
       <p>What type of riding do you do?
         <select class="dropdown" id="dropdown" name="rider-type">
           <option value="commuter">Commuter</option>
@@ -38,6 +41,7 @@
           <option value="offRoad">Off-road</option>
           <option value="other">Other</option>
         </select></p>
+
       <p>Do you wear protective gear?</p>
       <label for="yes">
         <input id="yes" type="radio" name="safety-gear" value="yes">Yes
@@ -48,6 +52,7 @@
       <label for="no">
         <input id="no" type="radio" name="safety-gear" value="no">No
       </label>
+
       <div class="gear-worn">
         <fieldset class="fieldset">
           <legend>What protective gear do you wear? (Choose all that apply)</legend>
@@ -61,7 +66,7 @@
             <input id="gloves" type="checkbox" class="protective-gear" value="gloves">Gloves
           </label>
           <label for="long-pants">
-            <input id="long-pants" type="checkbox" class="protective-gear " value="pants">Long pants
+            <input id="long-pants" type="checkbox" class="protective-gear" value="pants">Long pants
           </label>
           <label for="jacket">
             <input id="jacket" type="checkbox" class="protective-gear" value="jacket">Jacket
@@ -80,6 +85,7 @@
           </label>
         </fieldset>
       </div>
+
       <div class="importance">
         <p>On a scale of 1 to 5, with 1 being not important and 5 being very important, score each of the following based on your decision when choosing protective gear</p>
         <ul>
@@ -140,6 +146,36 @@
           </div>
         </ul>
       </div>
+
+      <p>Have you made modifications to your motorcycle to make it more visible?</p>
+      <label for="yes">
+        <input id="yes" type="radio" name="modifications" value="yes">Yes
+      </label>
+      <label for="no">
+        <input id="no" type="radio" name="modifications" value="no">No
+      </label>
+
+      <div class="modifications">
+        <fieldset class="fieldset">
+          <legend>If yes, check all that apply</legend>
+          <label for="headlight">
+            <input id="headlight" type="checkbox" class="modifications" value="headlight">Headlight modulator
+          </label>
+          <label for="led">
+            <input id="led" type="checkbox" class="modifications" value="led">LED Headlight/Taillights
+          </label>
+          <label for="reflective">
+            <input id="reflective" type="checkbox" class="modifications" value="reflective">Reflective stickers or Tape
+          </label>
+          <label for="brake">
+            <input id="brake" type="checkbox" class="modifications" value="brake">Modulating brake lights
+          </label>
+          <label for="other">
+            <input id="other" type="checkbox" class="modifications" value="other">Flags or Pennants
+          </label>
+        </fieldset>
+      </div>
+
       <p class="comments">Comments</p>
       <textarea id="comments" placeholder="Additional comments"></textarea>
       <button id="submit" type="submit">Submit</button>

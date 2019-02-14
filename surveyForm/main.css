@@ -51,7 +51,7 @@ em {
   height: 35px;
 }
 
-.gear-worn {
+.gear-worn, .modifications {
   margin: 0 auto;
   max-width: 55%;
   min-width: 95%;
@@ -62,7 +62,7 @@ em {
   border-radius: 4px;
 }
 
-.protective-gear {
+.protective-gear, .modifications {
   margin-left: 15px;
   margin-right: 5px;
 }
@@ -93,6 +93,7 @@ ul {
 }
 
 .comments {
+  margin-bottom: unset;
   text-align: left;
 }
 
