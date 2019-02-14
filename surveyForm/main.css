@@ -8,6 +8,7 @@ body {
 
 #container {
   background-color: #F9F9F9;
+  border-radius: 4px;
   margin: 0 auto;
   max-width: 80%;
   padding: 20px;
@@ -89,6 +90,10 @@ ul {
   content: "";
   display: table;
   clear: both;
+}
+
+.comments {
+  text-align: left;
 }
 
 textarea {

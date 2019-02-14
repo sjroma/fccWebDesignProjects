@@ -42,6 +42,9 @@
       <label for="yes">
         <input id="yes" type="radio" name="safety-gear" value="yes">Yes
       </label>
+      <label for="sometimes">
+        <input id="sometimes" type="radio" name="safety-gear" value="sometimes">Sometimes
+      </label>
       <label for="no">
         <input id="no" type="radio" name="safety-gear" value="no">No
       </label>
@@ -78,66 +81,66 @@
         </fieldset>
       </div>
       <div class="importance">
-        <p>On a scale of 1 to 5, with 1 being least important and 5 being very important, score each of the following based on your decision when choosing protective gear</p>
+        <p>On a scale of 1 to 5, with 1 being not important and 5 being very important, score each of the following based on your decision when choosing protective gear</p>
         <ul>
           <div class="row">
             <li class="fit-finish col-25" id="style">Style</li>
             <select class="dropdown col-75" id="style-score">
               <option value=""></option>
-              <option value="1-least important">1 - least important</option>
+              <option value="1-not important">1 - not important</option>
               <option value="2">2</option>
               <option value="3">3</option>
               <option value="4">4</option>
-              <option value="5-most important">5 - most important</option>
+              <option value="5-very important">5 - very important</option>
             </select>
           </div>
           <div class="row">
             <li class="fit-finish col-25" id="comfort">Comfort</li>
             <select class="dropdown col-75" id="comfort-score">
               <option value=""></option>
-              <option value="1-least important">1 - least important</option>
+              <option value="1-not important">1 - not important</option>
               <option value="2">2</option>
               <option value="3">3</option>
               <option value="4">4</option>
-              <option value="5-most important">5 - most important</option>
+              <option value="5-very important">5 - very important</option>
             </select>
           </div>
           <div class="row">
             <li class="fit-finish col-25" id="price">Price</li>
             <select class="dropdown col-75" id="price-score">
               <option value=""></option>
-              <option value="1-least important">1 - least important</option>
+              <option value="1-not important">1 - not important</option>
               <option value="2">2</option>
               <option value="3">3</option>
               <option value="4">4</option>
-              <option value="5-most important">5 - most important</option>
+              <option value="5-very important">5 - very important</option>
             </select>
           </div>
           <div class="row">
             <li class="fit-finish col-25" id="protection">Protection</li>
             <select class="dropdown col-75" id="protection-score">
               <option value=""></option>
-              <option value="1-least important">1 - least important</option>
+              <option value="1-not important">1 - not important</option>
               <option value="2">2</option>
               <option value="3">3</option>
               <option value="4">4</option>
-              <option value="5-most important">5 - most important</option>
+              <option value="5-very important">5 - very important</option>
             </select>
           </div>
           <div class="row">
             <li class="fit-finish col-25" id="visibility">Visibility</li>
             <select class="dropdown col-75" id="visibility-score">
               <option value=""></option>
-              <option value="1-least important">1 - least important</option>
+              <option value="1-not important">1 - not important</option>
               <option value="2">2</option>
               <option value="3">3</option>
               <option value="4">4</option>
-              <option value="5-most important">5 - most important</option>
+              <option value="5-very important">5 - very important</option>
             </select>
           </div>
         </ul>
       </div>
-      <p>Comments</p>
+      <p class="comments">Comments</p>
       <textarea id="comments" placeholder="Additional comments"></textarea>
       <button id="submit" type="submit">Submit</button>
     </form>
