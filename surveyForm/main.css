@@ -14,6 +14,13 @@ body {
   padding: 20px;
 }
 
+.gear-section, .mods {
+  background: rgba(0,0,0,0.02);
+  border-radius: 4px;
+  margin-bottom: 5px;
+  padding: 10px;
+}
+
 #description {
   font-size: larger;
   font-weight: 600;
