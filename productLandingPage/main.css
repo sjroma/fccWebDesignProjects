@@ -1,7 +1,15 @@
+/*
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+*/
+
 body {
   background-image: url("images/parchmentBG.jpg");
   background-repeat: no-repeat;
-  background-size: cover; /*resize image to cover entire container*/
+  background-size: cover;
   position: relative;
   background-color: #EBD5B3; /*if image is not available*/
   font-family: sans-serif;
@@ -31,12 +39,13 @@ body {
   text-transform: uppercase;
 }
 
-.begin {
-  padding-top: 50px; /*account for the fixed navbar*/
+h2 {
+  color: #423B32;
+  padding-top: 50px; /*account for fixed navbar*/
 }
 
-h2 {
-  padding-top: 50px; /*account for fixed navbar*/
+.fa, h3 {
+  color: #423B32;
 }
 
 .box-container {
@@ -48,9 +57,10 @@ h2 {
 }
   
 #box-1 {
+  border: 1px solid black;
   background-color: lightgray;
   width: 30%;
-  height: 50%; 
+/*  height: 50%; */
 }
 
 #box-2 {
@@ -98,6 +108,11 @@ h2 {
   padding-bottom: 5px;
 }
 
+.nospam {
+  color: #423B32;
+  margin-top: -11px;
+}
+
 .input-area {
   border-radius: 4px;
   font-size: small;
@@ -114,12 +129,13 @@ h2 {
   cursor: pointer;
   font-size: 15px;
   height: 40px;
+  margin-top: 5px;
   width: auto;
 }
 
 section, footer {
   text-align: center;
-  background: rgba(0,0,0,0.2);
+  background: rgba(0,0,0,0.2); /* darkens the background slightly */
   border-radius: 4px;
   padding: 20px;
   margin: 20px 0;
@@ -135,18 +151,19 @@ footer p {
   font-weight: 500;
 }
 
-@media all and (max-width:500px) {
+/* Extra small devices...phones */
+@media all and (max-width:576px) {
   .flex-nav a {
     flex-basis: 100%;
   }
   
-  /* Flex Container */
+  /* this is my Flex Container */
   .wrapper {
     display: flex;
     flex-direction: column;
   }
   
-  /* Flex Item */
+  /* Flex Item (on a small device, move sign-up to the top of the page) */
   .wrapper > * {
     order: 999;
   }

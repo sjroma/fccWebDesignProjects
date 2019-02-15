@@ -5,12 +5,17 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>fcc - Product Landing</title>
-  <link rel="stylesheet" type="text/css" href="main.css">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
   <style>
+
   </style>
+  <link rel="stylesheet" type="text/css" href="main.css">
 </head>
 
 <body>
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
   <div class="wrapper">
 
     <div class="flex-nav">
@@ -18,7 +23,7 @@
         <img id="header-img" src="http://">
         <nav id="nav-bar">
           <div class="navbar">
-            <span><a class="nav-link" href="#one">link one</a></span>
+            <span><a class="nav-link" href="#features">Features</a></span>
             <span><a class="nav-link" href="#pirate-games">Activities</a></span>
             <span><a class="nav-link" href="#media">Pirate's Life</a></span>
           </div>
@@ -26,35 +31,24 @@
       </header>
     </div>
 
-    <section class="begin">
-      <p> some text some text some text</p>
-      <p> some text some text some text</p>
-      <p> some text some text some text</p>
-      <p> some text some text some text</p>
-      <p> some text some text some text</p>
-      <p> some text some text some text</p>
-    </section>
+    <section class="features">
+      <h2></h2>
+      <h3><a id="features"><i class="fa fa-3x fa-skull-crossbones"></i>
+          Begining/Intermediate Sword Fighting</a></h3>
 
-    <section class="first">
-      <h2 id="one">Here's the 'one' content</h2>
-      <p> some text1 some text1 some text1</p>
-      <p> some text1 some text1 some text1</p>
-      <p> some text1 some text1 some text1</p>
-      <p> some text1 some text1 some text1</p>
-      <p> some text1 some text1 some text1</p>
-      <p> some text1 some text1 some text1</p>
-      <p> some text1 some text1 some text1</p>
-      <p> some text1 some text1 some text1</p>
-      <p> some text1 some text1 some text1</p>
-      <p> some text1 some text1 some text1</p>
+      <h3><a id="features"><i class="fa fa-3x fa-anchor"></i>
+          Treasure Map Fundamentals</a></h3>
+
+      <h3><a id="features"><i class="fa fa-3x fa-crow"></i>
+          Training your Parrot</a></h3>
     </section>
 
     <section class="activities">
-      <h2 id="pirate-games">Pirate Games</h2>
+      <h2 id="pirate-games">Pirate Games and Activies</h2>
       <div class="box-container">
-        <div id="box-1"></div>
-        <div id="box-2"></div>
-        <div id="box-3"></div>
+        <div id="box-1">Beginner Sword Fighting</div>
+        <div id="box-2">Treasure Map Reading</div>
+        <div id="box-3">Teaching your Parrot</div>
         <div id="box-4"></div>
         <div id="box-5"></div>
       </div>
@@ -66,7 +60,7 @@
     </section>
 
     <section class="signup">
-      <p class="signup-title">Sign up for more information about departure times, locations and cruise lengths</p>
+      <p class="signup-title">Sign up for more information about departure times, locations and voyage lengths</p>
       <form id="form" class="signup" action="https://www.freecodecamp.com/email-submit">
         <div class="name">
           <label for="name" id="name-label"><em>*</em> Name</label>
@@ -77,17 +71,19 @@
           <input class="input-area" id="email" name="email" type="email" placeholder="Email address" required><br>
         </div>
         <input class="button" type="submit" id="submit" value="Send the scuttlebutt!">
+        <div class="nospam">
+          <h6>You'll never get spam. Unsubscribe at any time.</h6>
+        </div>
       </form>
     </section>
 
     <footer>
       <p>A Pen by Roma</p>
       <p>I followed the format in <a href="https://wesbos.com/courses/" target="_blank"> Wes Bos'</a> informative video tutorial <em><b>Mobile Content Reordering with Flexbox</b></em> when creating this page</p>
-      <p>Looks like <a href="https://codepen.io/freeCodeCamp/full/RKRbwL" target="_blank">FCC's Responsive Web Design Projects - Build a Product Landing Page</a> did also</p>
+      <p>Looks as if <a href="https://codepen.io/freeCodeCamp/full/RKRbwL" target="_blank">FCC's Responsive Web Design Projects - Build a Product Landing Page</a> did also</p>
     </footer>
 
   </div>
-  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </body>
 
 </html>
