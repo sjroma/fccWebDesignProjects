@@ -16,7 +16,7 @@
   <div id="container">
     <p id="description">A Personal Protection Questionaire</p>
 
-    <form id="survey-form">
+    <form id="survey-form" action="#" method="GET">
 
       <div id="personal-info">
         <div class="name">
@@ -29,7 +29,7 @@
         </div>
         <div class="age">
           <label for="number" id="number-label">Age</label>
-          <input class="input-area" id="number" type="number" placeholder="Age" pattern="[18-99]{2}" min="18" , max="99">
+          <input class="input-area" id="number" type="number" placeholder="Age" min="18"  max="99">
         </div>
       </div>
 
@@ -42,138 +42,142 @@
           <option value="other">Other</option>
         </select></p>
 
-      <p>Do you wear protective gear?</p>
-      <label for="yes">
-        <input id="yes" type="radio" name="safety-gear" value="yes">Yes
-      </label>
-      <label for="sometimes">
-        <input id="sometimes" type="radio" name="safety-gear" value="sometimes">Sometimes
-      </label>
-      <label for="no">
-        <input id="no" type="radio" name="safety-gear" value="no">No
-      </label>
+      <div class="gear-section">
+        <p>Do you wear protective gear?</p>
+        <label for="yes">
+          <input id="yes" type="radio" name="safety-gear" value="yes">Yes
+        </label>
+        <label for="sometimes">
+          <input id="sometimes" type="radio" name="safety-gear" value="sometimes">Sometimes
+        </label>
+        <label for="no">
+          <input id="no" type="radio" name="safety-gear" value="no">No
+        </label>
 
-      <div class="gear-worn">
-        <fieldset class="fieldset">
-          <legend>What protective gear do you wear? (Choose all that apply)</legend>
-          <label for="helmet">
-            <input id="helmet" type="checkbox" class="protective-gear" value="helmet">Helmet
-          </label>
-          <label for="eye-protection">
-            <input id="eye-protection" type="checkbox" class="protective-gear" value="eye">Eye protection
-          </label>
-          <label for="gloves">
-            <input id="gloves" type="checkbox" class="protective-gear" value="gloves">Gloves
-          </label>
-          <label for="long-pants">
-            <input id="long-pants" type="checkbox" class="protective-gear" value="pants">Long pants
-          </label>
-          <label for="jacket">
-            <input id="jacket" type="checkbox" class="protective-gear" value="jacket">Jacket
-          </label>
-          <label for="body-armor">
-            <input id="body-armor" type="checkbox" class="protective-gear" value="armor">Body Armor
-          </label>
-          <label for="riding-boots">
-            <input id="riding-boots" type="checkbox" class="protective-gear" value="boots">Riding Boots
-          </label>
-          <label for="reflective">
-            <input id="reflective" type="checkbox" class="protective-gear" value="reflective">Reflective vest
-          </label>
-          <label for="none">
-            <input id="none" type="checkbox" class="protective-gear" value="none">Don't wear protective gear
-          </label>
-        </fieldset>
+        <div class="gear-worn">
+          <fieldset class="fieldset">
+            <legend>What protective gear do you wear? (Choose all that apply)</legend>
+            <label for="helmet">
+              <input id="helmet" type="checkbox" class="protective-gear" value="helmet">Helmet
+            </label>
+            <label for="eye-protection">
+              <input id="eye-protection" type="checkbox" class="protective-gear" value="eye">Eye protection
+            </label>
+            <label for="gloves">
+              <input id="gloves" type="checkbox" class="protective-gear" value="gloves">Gloves
+            </label>
+            <label for="long-pants">
+              <input id="long-pants" type="checkbox" class="protective-gear" value="pants">Long pants
+            </label>
+            <label for="jacket">
+              <input id="jacket" type="checkbox" class="protective-gear" value="jacket">Jacket
+            </label>
+            <label for="body-armor">
+              <input id="body-armor" type="checkbox" class="protective-gear" value="armor">Body Armor
+            </label>
+            <label for="riding-boots">
+              <input id="riding-boots" type="checkbox" class="protective-gear" value="boots">Riding Boots
+            </label>
+            <label for="reflective">
+              <input id="reflective" type="checkbox" class="protective-gear" value="reflective">Reflective vest
+            </label>
+            <label for="none">
+              <input id="none" type="checkbox" class="protective-gear" value="none">Don't wear protective gear
+            </label>
+          </fieldset>
+        </div>
+
+        <div class="importance">
+          <p>On a scale of 1 to 5, with 1 being not important and 5 being very important, score each of the following based on your decision when choosing protective gear</p>
+          <ul>
+            <div class="row">
+              <li class="fit-finish col-25" id="style">Style</li>
+              <select class="dropdown col-75" id="style-score">
+                <option value="">--Please select one--</option>
+                <option value="1">1 - Not important</option>
+                <option value="2">2 - A little</option>
+                <option value="3">3 - Doesn't impact my decision</option>
+                <option value="4">4 - Important</option>
+                <option value="5">5 - Very important</option>
+              </select>
+            </div>
+            <div class="row">
+              <li class="fit-finish col-25" id="comfort">Comfort</li>
+              <select class="dropdown col-75" id="comfort-score">
+                <option value="">--Please select one--</option>
+                <option value="1">1 - Not important</option>
+                <option value="2">2 - A little</option>
+                <option value="3">3 - Doesn't impact my decision</option>
+                <option value="4">4 - Important</option>
+                <option value="5">5 - Very important</option>
+              </select>
+            </div>
+            <div class="row">
+              <li class="fit-finish col-25" id="price">Price</li>
+              <select class="dropdown col-75" id="price-score">
+                <option value="">--Please select one--</option>
+                <option value="1">1 - Not important</option>
+                <option value="2">2 - A little</option>
+                <option value="3">3 - Doesn't impact my decision</option>
+                <option value="4">4 - Important</option>
+                <option value="5">5 - Very important</option>
+              </select>
+            </div>
+            <div class="row">
+              <li class="fit-finish col-25" id="protection">Protection</li>
+              <select class="dropdown col-75" id="protection-score">
+                <option value="">--Please select one--</option>
+                <option value="1">1 - Not important</option>
+                <option value="2">2 - A little</option>
+                <option value="3">3 - Doesn't impact my decision</option>
+                <option value="4">4 - Important</option>
+                <option value="5">5 - Very important</option>
+              </select>
+            </div>
+            <div class="row">
+              <li class="fit-finish col-25" id="visibility">Visibility</li>
+              <select class="dropdown col-75" id="visibility-score">
+                <option value="">--Please select one--</option>
+                <option value="1">1 - Not important</option>
+                <option value="2">2 - A little</option>
+                <option value="3">3 - Doesn't impact my decision</option>
+                <option value="4">4 - Important</option>
+                <option value="5">5 - Very important</option>
+              </select>
+            </div>
+          </ul>
+        </div>
       </div>
 
-      <div class="importance">
-        <p>On a scale of 1 to 5, with 1 being not important and 5 being very important, score each of the following based on your decision when choosing protective gear</p>
-        <ul>
-          <div class="row">
-            <li class="fit-finish col-25" id="style">Style</li>
-            <select class="dropdown col-75" id="style-score">
-              <option value=""></option>
-              <option value="1">1 - Not important</option>
-              <option value="2">2 - A little</option>
-              <option value="3">3 - Doesn't impact my decision</option>
-              <option value="4">4 - Important</option>
-              <option value="5">5 - Very important</option>
-            </select>
-          </div>
-          <div class="row">
-            <li class="fit-finish col-25" id="comfort">Comfort</li>
-            <select class="dropdown col-75" id="comfort-score">
-              <option value=""></option>
-              <option value="1">1 - Not important</option>
-              <option value="2">2 - A little</option>
-              <option value="3">3 - Doesn't impact my decision</option>
-              <option value="4">4 - Important</option>
-              <option value="5">5 - Very important</option>
-            </select>
-          </div>
-          <div class="row">
-            <li class="fit-finish col-25" id="price">Price</li>
-            <select class="dropdown col-75" id="price-score">
-              <option value=""></option>
-              <option value="1">1 - Not important</option>
-              <option value="2">2 - A little</option>
-              <option value="3">3 - Doesn't impact my decision</option>
-              <option value="4">4 - Important</option>
-              <option value="5">5 - Very important</option>
-            </select>
-          </div>
-          <div class="row">
-            <li class="fit-finish col-25" id="protection">Protection</li>
-            <select class="dropdown col-75" id="protection-score">
-              <option value=""></option>
-              <option value="1">1 - Not important</option>
-              <option value="2">2 - A little</option>
-              <option value="3">3 - Doesn't impact my decision</option>
-              <option value="4">4 - Important</option>
-              <option value="5">5 - Very important</option>
-            </select>
-          </div>
-          <div class="row">
-            <li class="fit-finish col-25" id="visibility">Visibility</li>
-            <select class="dropdown col-75" id="visibility-score">
-              <option value=""></option>
-              <option value="1">1 - Not important</option>
-              <option value="2">2 - A little</option>
-              <option value="3">3 - Doesn't impact my decision</option>
-              <option value="4">4 - Important</option>
-              <option value="5">5 - Very important</option>
-            </select>
-          </div>
-        </ul>
-      </div>
+      <div class="mods">
+        <p>Have you made modifications to your motorcycle to make it more visible?</p>
+        <label for="yay">
+          <input id="yay" type="radio" name="modifications" value="yes">Yes
+        </label>
+        <label for="nay">
+          <input id="nay" type="radio" name="modifications" value="no">No
+        </label>
 
-      <p>Have you made modifications to your motorcycle to make it more visible?</p>
-      <label for="yes">
-        <input id="yes" type="radio" name="modifications" value="yes">Yes
-      </label>
-      <label for="no">
-        <input id="no" type="radio" name="modifications" value="no">No
-      </label>
-
-      <div class="modifications">
-        <fieldset class="fieldset">
-          <legend>If yes, check all that apply</legend>
-          <label for="headlight">
-            <input id="headlight" type="checkbox" class="modifications" value="headlight">Headlight modulator
-          </label>
-          <label for="led">
-            <input id="led" type="checkbox" class="modifications" value="led">LED Headlight/Taillights
-          </label>
-          <label for="reflective">
-            <input id="reflective" type="checkbox" class="modifications" value="reflective">Reflective stickers or Tape
-          </label>
-          <label for="brake">
-            <input id="brake" type="checkbox" class="modifications" value="brake">Modulating brake lights
-          </label>
-          <label for="other">
-            <input id="other" type="checkbox" class="modifications" value="other">Flags or Pennants
-          </label>
-        </fieldset>
+        <div class="modifications">
+          <fieldset class="fieldset">
+            <legend>If yes, check all that apply</legend>
+            <label for="headlight">
+              <input id="headlight" type="checkbox" class="modifications" value="headlight">Headlight modulator
+            </label>
+            <label for="led">
+              <input id="led" type="checkbox" class="modifications" value="led">LED Headlight/Taillights
+            </label>
+            <label for="reflect">
+              <input id="reflect" type="checkbox" class="modifications" value="reflective">Reflective stickers or Tape
+            </label>
+            <label for="brake">
+              <input id="brake" type="checkbox" class="modifications" value="brake">Modulating brake lights
+            </label>
+            <label for="other">
+              <input id="other" type="checkbox" class="modifications" value="other">Flags or Pennants
+            </label>
+          </fieldset>
+        </div>
       </div>
 
       <p class="comments">Comments</p>
