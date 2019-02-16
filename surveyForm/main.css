@@ -1,8 +1,9 @@
+@import url('https://fonts.googleapis.com/css?family=Rubik');
+
 html,
 body {
-  background-color: lightgreen;
   background-color: #E2F4DC;
-  font-family: "Lucinda Sans", sans-serif;
+  font-family: 'Rubik', sans-serif;
   text-align: center;
 }
 
@@ -93,7 +94,7 @@ ul {
 }
 
 /* Clear floats after the columns */
-.row:after {
+.importance:after {
   content: "";
   display: table;
   clear: both;
