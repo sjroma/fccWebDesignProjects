@@ -1,6 +1,6 @@
 # freeCodeCamp
 
-Working through the on-line course, _Responsive Web Design Certification_ at [freeCodeCamp](https://freecodecamp.com)  
+Working through the on-line course, _Responsive Web Design Certification_ at [freeCodeCamp](https://freecodecamp.org)  
 The course covers;  
 * Basic HTML and HTML5  
 * Basic CSS  
