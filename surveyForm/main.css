@@ -62,15 +62,17 @@ em {
 .gear-worn, .modifications {
   margin: 0 auto;
   max-width: 55%;
-  min-width: 95%;
+/*  min-width: 95%;*/
   padding-top: 30px;
 }
 
 .fieldset {
   border-radius: 4px;
+  display: inline-grid;
+  text-align: left;
 }
 
-.protective-gear, .modifications {
+.protective-gear {
   margin-left: 15px;
   margin-right: 5px;
 }
@@ -84,7 +86,9 @@ ul {
 .col-25 {
   float: left;
   width: 25%;
-  margin-top: 6px;
+  margin-top: 12px;
+  padding-right: 6px;
+  text-align: right;
 }
 
 .col-75 {
