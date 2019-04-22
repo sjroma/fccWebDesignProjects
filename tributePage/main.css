@@ -28,6 +28,7 @@ body {
 }
 
 #tribute-info {
+  line-height: 1.5em;
   margin: 0 auto;
   max-width: 75%;
   min-width: 85%;
