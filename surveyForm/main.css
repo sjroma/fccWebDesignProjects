@@ -1,12 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Rubik');
 
 html, body {
+  border: 0px;
   margin: 0px;
   padding: 0px;
-  border: 0px;
-}
-
-html, body {
   background-color: #E2F4DC;
   font-family: 'Rubik', sans-serif;
   text-align: center;
