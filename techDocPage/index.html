@@ -3,7 +3,6 @@
 
 <head>
   <meta charset="utf-8">
-  <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
   <title>fCC: Build a Technical Documentation Page</title>
@@ -21,16 +20,18 @@
     <!-- collapsed navbar displays horizontally for medium and smaller screens -->
     <div class="d-block d-md-none">
       <nav class="navbar navbar-expand-md bg-light navbar-light fixed-top">
-        <a class="navbar-brand" href="#">CSS Documentation</a>
+        <a class="navbar-brand" href="#">Articles</a>
         <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarSections">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSections">
           <a class="nav-link" href="#Introduction_to_CSS">Introduction to CSS</a>
-          <a class="nav-link" href="#How_CSS_Works">How CSS Works</a>
-          <a class="nav-link" href="#header_3_title">header 3 title</a>
-          <a class="nav-link" href="#header_4_title">header 4 title</a>
-          <a class="nav-link" href="#header_5_title">header 5 title</a>
+          <a class="nav-link" href="#What_is_CSS?">What is CSS?</a>
+          <a class="nav-link" href="#CSS_Syntax">CSS Syntax</a>
+          <a class="nav-link" href="#Selectors_Introduction">Selectors Introduction</a>
+          <a class="nav-link" href="#Simple_Selectors">Simple Selectors</a>
+          <a class="nav-link" href="#Attribute_Selectors">Attribute Selectors</a>
+          <a class="nav-link" href="#Reference">Reference</a>
         </div>
       </nav>
     </div>
@@ -41,67 +42,299 @@
       <!-- navbar displays vertically on the left for large and extra large screens -->
       <div class="col-md-3">
         <nav id="navbar" class="navbar flex-column sticky-top navbar-side">
-          <header>CSS Documentation</header>
+          <header>Articles</header>
           <a class="nav-link" href="#Introduction_to_CSS">Introduction to CSS</a>
-          <a class="nav-link" href="#How_CSS_Works">How CSS Works</a>
-          <a class="nav-link" href="#header_3_title">header 3 title</a>
-          <a class="nav-link" href="#header_4_title">header 4 title</a>
-          <a class="nav-link" href="#header_5_title">header 5 title</a>
+          <a class="nav-link" href="#What_is_CSS?">What is CSS?</a>
+          <a class="nav-link" href="#CSS_Syntax">CSS Syntax</a>
+          <a class="nav-link" href="#Selectors_Introduction">Selectors Introduction</a>
+          <a class="nav-link" href="#Simple_Selectors">Simple Selectors</a>
+          <a class="nav-link" href="#Attribute_Selectors">Attribute Selectors</a>
+          <a class="nav-link" href="#Reference">Reference</a>
         </nav>
       </div>
       <!-- end vertical navbar -->
 
       <div class="col-md-9">
         <main id="main-doc">
+          <h1 class="title text-center">CSS - Styling the Web</h1>
 
           <section class="main-section" id="Introduction_to_CSS">
-            <header>Introduction to CSS</header>
+            <header>
+              <h2>Introduction to CSS</h2>
+            </header>
             <article>
+              <p>CSS (Cascading Style Sheets) is used to style and layout web pages — for example, to alter the font, color, size and spacing of your content, split it into multiple columns, or add animations and other decorative features. This module gets you started on the path to CSS mastery with the basics of how it works, including selectors and properties, writing CSS rules, applying CSS to HTML, how to specify length, color, and other units in CSS, cascade and inheritance, and debugging CSS.</p>
+
+              <h3>Prerequisites</h3>
               <p>Before starting this module, you should have:</p>
-              <ul class="list-unstyled">
+              <ul>
                 <li>Basic familiarity with using computers, and using the Web passively (i.e. just looking at it, consuming the content.)</li>
-                <li>A basic work environment set up as detailed in Installing basic software, and an understanding of how to create and manage files, as detailed in Dealing with files.</li>
-                <li>Basic familiarity with HTML, as discussed in the Introduction to HTML module.</li>
+                <li>A basic work environment set up as detailed in <a href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/Installing_basic_software" target="_blank">Installing basic software</a>, and an understanding of how to create and manage files, as detailed in <a href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/Dealing_with_files" target="_blank">Dealing with files</a>.</li>
+                <li>Basic familiarity with HTML, as discussed in the <a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML" target="_blank">Introduction to HTML</a> module.</li>
+              </ul>
+            </article>
+          </section>
+
+          <section class="main-section" id="What_is_CSS?">
+            <header>
+              <h2>What is CSS?</h2>
+            </header>
+            <article>
+              <p>As we have mentioned before, CSS is a language for specifying how documents are presented to users - how they are styled, laid out, etc.</p>
+              <p>A <strong>document</strong> is usually a text file structured using a <i>markup language</i> - <abbr title="HyperText Markup Language (HTML) is a descriptive language that specifies webpage structure">HTML</abbr> is the most common markup language, but you will also come across other markup languages such as <abbr title="Scalable Vector Graphics (SVG) is a 2D vector image format based on an XML syntax">SVG</abbr> or <abbr title="eXtensible Markup Language (XML) is a generic markup language specified by the W3C">XML</abbr>.</p>
+              <p><strong>Presenting</strong> a document to a user means converting it into a usable form for your audience. <abbr title="A Web browser or browser is a program that retrieves and displays pages from the Web, and lets users access further pages through hyperlinks. A browser is the most familiar type of user agent.">Browsers</abbr>, like Firefox, Chrome or Internet Explorer, are designed to present documents visually, for example, on a computer screen, projector or printer.</p>
+
+              <h3>How does CSS affect HTML?</h3>
+              <p>Web browsers apply CSS rules to a document to affect how they are displayed. A CSS rule is formed from:</p>
+              <ul>
+                <li>A set of properties, which have values set to update how the HTML content is displayed, for example, <i>I want my element's width to be 50% of its parent element, and its background to be red</i>.</li>
+                <li>A selector, which selects the element(s) you want to apply the updated property values to. For example, <i>I want to apply my CSS rule to all the paragraphs in my HTML document</i>.</li>
+              </ul>
+              <p>A set of CSS rules contained within a stylesheet determines how a webpage should look. You will learn a lot more about what CSS syntax looks like in the next article of the module — CSS Syntax.</p>
+              <h3>A quick CSS example</h3>
+              <p>The above descriptions may or may not have made sense, so let's make sure things are clear by presenting a quick example. First of all, let's take a simple HTML document, containing an <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/h1" target="_blank">&lt;h1&gt;</a> and a <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/p" target="_blank">&lt;p&gt;</a> (notice that a stylesheet is applied to the HTML using a <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/link" target="_blank">&lt;link&gt;</a> element):</p>
+              <pre><code>
+  &lt;!DOCTYPE html&gt;
+  &lt;html&gt;
+  &lt;head&gt;
+    &lt;meta charset="utf-8"&gt;
+    &lt;title&gt;My CSS experiment&lt;/title&gt;
+    &lt;link rel="stylesheet" href="style.css"&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;h1&gt;Hello World!&lt;/h1&gt;
+    &lt;p&gt;This is my first CSS example&lt;/p&gt;
+  &lt;/body&gt;
+  &lt;/html&gt;
+              </code></pre>
+              <p>Now let's look at a very simple CSS example containing two rules:</p>
+              <pre><code>
+  h1 {
+    color: blue;
+    background-color: yellow;
+    border: 1px solid black;
+  }
+
+  p {
+    color: red;
+  }
+              </code></pre>
+              <p>The first rule starts with an h1 selector, which means that it will apply its property values to the <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/h1" target="_blank">&lt;h1&gt;</a> element. It contains three properties and their values (each property/value pair is called a <strong>declaration</strong>):</p>
+              <ol>
+                <li>The first one sets the text color to blue.</li>
+                <li>The second sets the background color to yellow.</li>
+                <li>The third one puts a border around the header that is 1 pixel wide, solid (not dotted, or dashed, etc.), and colored black.</li>
+              </ol>
+              <p>The second rule starts with a p selector, which means that it will apply its property values to the <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/p" target="_blank">&lt;p&gt;</a> element. It contains one declaration, which sets the text color to red.</p>
+              <p>In a web browser, the code above would produce the following output:</p>
+              <img class="image" src="images/browserCSS.png" alt="sample browser display">
+              <p>This isn't too pretty, but at least it starts to give you an idea of how CSS works.</p>
+            </article>
+          </section>
+
+          <section class="main-section" id="CSS_Syntax">
+            <header>
+              <h2>CSS Syntax</h2>
+            </header>
+            <article>
+
+              <h3>A touch of vocabulary</h3>
+              <p>At its most basic level, CSS consists of two building blocks:</p>
+              <ul>
+                <li><strong>Properties:</strong> Human-readable identifiers that indicate which stylistic features (e.g. font, width, background color) you want to change.</li>
+                <li><strong>Values:</strong> Each specified property is given a value, which indicates how you want to change those stylistic features (e.g. what you want to change the font, width or background color to.)</li>
+              </ul>
+              <p>A property paired with a value is called a <i>CSS declaration</i>. CSS declarations are put within <i>CSS Declaration Blocks</i>. And finally, CSS declaration blocks are paired with <i>selectors</i> to produce <i>CSS Rulesets</i> (or <i>CSS Rules</i>).</p>
+              <p>Before getting too deep in theory and written explanation, let's look at a concrete example.</p>
+              <pre><code>
+  &lt;!DOCTYPE html&gt;
+  &lt;html&gt;
+  &lt;head&gt;
+    &lt;meta charset="utf-8"&gt;
+    &lt;title&gt;My CSS experiment&lt;/title&gt;
+    &lt;link rel="stylesheet" href="style.css"&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;h1&gt;Hello World!&lt;/h1&gt;
+    &lt;p&gt;This is my first CSS example&lt;/p&gt;
+
+    &lt;ul&gt;
+      &lt;li&gt;This is&lt;/li&gt;
+      &lt;li&gt;a list&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/body&gt;
+  &lt;/html&gt;
+              </code></pre>
+              <p>And the CSS file:</p>
+              <pre><code>
+  h1 {
+    colour: blue;
+    background-color: yellow;
+    border: 1px solid black;
+  }
+
+  p {
+    color: red;
+  }
+
+  p, li {
+    text-decoration: underline;
+  }
+              </code></pre>
+              <p>Combining these two gives the following result;</p>
+              <img class="image" src="images/resultCSS.png" alt="sample browser display">
+              <p>Let's look at the syntax in more detail.</p>
+              <p>Setting CSS properties to specific values is the core function of the CSS language. The CSS engine calculates which declarations apply to every single element of a page in order to appropriately lay it out and style it. The property and value in each pair is separated by a colon (:).</p>
+              <img class="image" src="images/declarationCSS.png" alt="">
+              <p>There are more than <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference" target="_blank">300 different properties</a> in CSS and nearly an infinite number of different values. Not all pairs of properties and values are allowed; each property has a specific list of valid values defined for it.</p>
+              <p class="warn"><strong>Important:</strong> If a property is unknown or if a value is not valid for a given property, the declaration is deemed <i>invalid</i> and is wholly ignored by the browser's CSS engine.</p>
+              <p class="warn"><strong>Important:</strong> In CSS (and other web standards), US spelling has been agreed on as the standard to stick to where uncertainty arises. For example, color should <i>always</i> be spelled <strong>color</strong>. <strong>colour</strong> won't work.</p>
+
+              <h3>Beyond syntax: make CSS readable</h3>
+              <p>As you can see, CSS syntax is not that hard to write: you write some rules and if you write them wrong, they will just be ignored. However, even if that works, there are some best practices worth knowing to make your CSS code easier to use and maintain.</p>
+              <p>As you can see, CSS syntax is not that hard to write: you write some rules and if you write them wrong, they will just be ignored. However, even if that works, there are some best practices worth knowing to make your CSS code easier to use and maintain.</p>
+              <p>In the same manner as HTML, the browser tends to ignore much of the whitespace inside your CSS; a lot of the whitespace is just there to aid readability. In our first example below we have each declaration (and rule start/end) on its own line - this is arguably a good way to write CSS, as it makes it easy to maintain and understand:</p>
+              <pre><code>
+  body {
+    font: 1em/150% Helvetica, Arial, sans-serif;
+    padding: 1em;
+    margin: 0 auto;
+    max-width: 33em;
+  }
+
+  @media (min-width: 70em) {
+    body {
+    font-size: 130%;
+    }
+  }
+
+  h1 {
+    font-size: 1.5em;
+  }
+
+  div p, #id:first-line {
+    background-color: red;
+    background-style: none
+  }
+
+  div p {
+    margin: 0;
+    padding: 1em;
+  }
+
+  div p + p {
+    padding-top: 0;
+  }
+              </code></pre>
+              <p>You could write exactly the same CSS like so, with most of the whitespace removed — this is functionally identical to the first example, but I'm sure you'll agree that it is somewhat harder to read:</p>
+              <pre><code>
+  body {font: 1em/150% Helvetica, Arial, sans-serif; padding: 1em; margin: 0 auto; max-width: 33em;}
+  @media (min-width: 70em) { body {font-size: 130%;} }
+  h1 {font-size: 1.5em;}
+  div p, #id:first-line {background-color: red; background-style: none}
+  div p {margin: 0; padding: 1em;}
+  div p + p {padding-top: 0;}
+              </code></pre>
+              <p>The code layout you choose is usually a personal preference, although when you start to work in teams, you may find that the existing team has its own style guide that specifies an agreed convention to follow.</p>
+              <p>The whitespace you do need to be careful of in CSS is the whitespace around the properties and their values. For example, the following is valid CSS:</p>
+              <pre><code>
+  margin: 0 auto;
+  padding-left: 10px;
+              </code></pre>
+              <p>But the following is invalid:</p>
+              <pre><code>
+  margin: 0auto;
+  padding- left: 10px;
+              </code></pre>
+              <p>Because <strong>0auto</strong> is not recognised as a valid value for the margin property (<strong>0</strong> and <strong>auto</strong> are two separate values,) and the browser does not recognise <strong>padding-</strong> as a valid property. So you should always make sure to separate distinct values from one another by at least a space, but keep property names/values together as one unbroken string.</p>
+              <p>As with HTML, you are encouraged to make comments in your CSS, to help you understand how your code works when coming back to it after several months, and to help others understand it. Comments are also useful for temporarily commenting out certain parts of the code for testing purposes, for example if you are trying to find which part of your code is causing an error.</p>
+              <p>Comments in CSS begin with <strong>/*</strong> and end with <strong>*/</strong>.</p>
+            </article>
+          </section>
+
+          <section class="main-section" id="Selectors_Introduction">
+            <header>
+              <h2>Selectors Introduction</h2>
+            </header>
+            <article>
+              <p>In <abbr title="CSS (Cascading Style Sheets) is a declarative language that controls how webpages look in the browser.">CSS</abbr>, selectors are used to target the <abbr title="HTML (HyperText Markup Language) is a descriptive language that specifies webpage structure.">HTML</abbr> elements on our web pages that we want to style. There are a wide variety of CSS selectors available, allowing for fine grained precision when selecting elements to style. In the next few articles we'll run through the different types in great detail, seeing how they work.</p>
+
+              <h3>The basics</h3>
+              <p>In the last article we explained general CSS syntax and terminology in detail. To recap, selectors are one part of a CSS rule and come just before CSS declaration blocks.</p>
+              <img class="image" src="images/differentSelectorsCSS.png" alt="different types of selectors and declaration block in CSS ruleset">
+              <p>Selectors can be divided into the following categories:</p>
+              <ul>
+                <li><strong>Simple selectors:</strong> Match one or more elements based on element type, class, or id.</li>
+                <li><strong>Attribute selectors:</strong> Match one or more elements based on their attributes/attribute values.</li>
+                <li><strong>Pseudo-classes:</strong> Match one or more elements that exist in a certain state, such as an element that is being hovered over by the mouse pointer, or a checkbox that is currently disabled or checked, or an element that is the first child of its parent in the DOM tree.</li>
+                <li><strong>Pseudo-elements:</strong> Match one or more parts of content that are in a certain position in relation to an element, for example the first word of each paragraph, or generated content appearing just before an element.</li>
+                <li><strong>Combinators:</strong> These are not exactly selectors themselves, but ways of combining two or more selectors in useful ways for very specific selections. So for example, you could select only paragraphs that are direct descendants of divs, or paragraphs that come directly after headings.</li>
+                <li><strong>Multiple selectors:</strong> Again, these are not separate selectors; the idea is that you can put multiple selectors on the same CSS rule, separated by commas, to apply a single set of declarations to all the elements selected by those selectors.</li>
               </ul>
 
+              <h3 id="selectors">Selectors article overview</h3>
+              <p>The next four articles all explore different aspects of selectors — we've broken this information up because there is a lot of it, and we wanted to make it less intimidating and give you some clear points to take breaks mid-learning. The articles are as follows:</p>
+              <ul>
+                <li><a href="#selectors">Simple selectors</a></li>
+                <li><a href="#selectors">Attribute selectors</a></li>
+                <li><a href="#selectors">Pseudo-classes and pseudo-elements</a></li>
+                <li><a href="#selectors">Combinators and multiple selectors</a></li>
+              </ul>
+              <p>You are strongly advised to tackle simple selectors first, in case you miss any pertinent information.</p>
+              <p><strong>Editors note:</strong> As this document is not comprehensive and these links may be confusing to laymen I have not included the link aways here.</p>
             </article>
           </section>
 
-          <section class="main-section" id="How_CSS_Works">
-            <header>How CSS Works</header>
+          <section class="main-section" id="Simple_Selectors">
+            <header>
+              <h2>Simple Selectors</h2>
+            </header>
             <article>
-              <li>fourth list item</li>
-              <li>fifth list item...just to make another test pass</li>
-            </article>
-            <pre><code>test code</code></pre>
-          </section>
+              <p>In this, our first selectors article, we'll learn about "simple" selectors. They directly match one or more elements of a document, based on the type of element, <em>class</em>, or <em>id</em>.</p>
 
-          <section class="main-section" id="header_3_title">
-            <header>header 3 title</header>
-            <article>
-              <p>Long boat ye parrel measured fer yer chains capstan keelhaul spyglass Privateer pirate Davy Jones' Locker Chain Shot aft killick gangplank black spot draft. Run a shot across the bow log strike colors gally killick come about weigh anchor Corsair Pirate Round hail-shot clap of thunder man-of-war Spanish Main quarterdeck long boat heave to. Bilge rat brig Barbary Coast gun overhaul furl execution dock cutlass schooner six pounders reef take a caulk scourge of the seven seas league avast flogging. Take a caulk draft brigantine furl stern chandler piracy lugger Gold Road plunder mizzen deadlights rum main sheet lookout blow the man down. Chase guns splice the main brace Plate Fleet holystone scourge of the seven seas matey hands Letter of Marque Pirate Round skysail Blimey pinnace come about lanyard interloper topmast. Overhaul chantey reef sails heave down hands interloper Pieces of Eight draught lookout run a shot across the bow pillage Sea Legs bilge rat schooner tack long clothes. Ho pressgang tackle avast bilge water hearties square-rigged galleon quarterdeck nipperkin yard fire in the hole lateen sail trysail draught hands. Deadlights brig poop deck bilge careen league gibbet chase guns gaff hempen halter run a rig fire ship hands hang the jib bounty maroon. Piracy stern run a rig yardarm gaff grog blossom handsomely Shiver me timbers parley broadside parrel Davy Jones' Locker code of conduct smartly Cat o'nine tails barkadeer. Main sheet flogging ahoy plunder Barbary Coast scuttle lugsail wherry aye chantey matey Blimey grog gunwalls chase guns Sea Legs. Swab belaying pin trysail Blimey lugger loot lugsail hardtack sloop killick Arr rum bounty come about reef sails main sheet. Careen scurvy pirate crow's nest warp pillage trysail capstan knave belay quarter Arr bucko topsail matey gabion. Crimp yard Pieces of Eight capstan Sink me tack fire ship doubloon main sheet topsail code of conduct pressgang pink topgallant boatswain overhaul.</p>
-              <p>Bucko capstan spanker mutiny Arr.</p>
+              <h3>Type selectors aka element selectors</h3>
+              <p>This selector is just a case-insensitive match between the selector name and a given HTML element name. This is the simplest way to target all elements of a given type. Let's take a look at an example:</p>
             </article>
           </section>
 
-          <section class="main-section" id="header_4_title">
-            <header>header 4 title</header>
+          <section class="main-section" id="Attribute_Selectors">
+            <header>
+              <h2>Attribute Selectors</h2>
+            </header>
             <article>
-              <p>Main sheet fore lugsail galleon yardarm American Main matey hands gun clipper barkadeer black spot line pillage no prey, no pay Letter of Marque. Rutters wherry Spanish Main Jack Tar topsail interloper to go on account ye chandler gabion parley dead men tell no tales no prey, no pay reef sails bowsprit lookout. Log parrel careen cutlass lugsail scurvy league matey draught transom galleon sutler mutiny wherry barkadeer Buccaneer. Buccaneer hempen halter haul wind Shiver me timbers flogging fathom transom starboard Blimey spirits doubloon Nelsons folly mizzen prow heave down scuppers. Hands doubloon league Buccaneer Nelsons folly furl Gold Road rutters long clothes Sink me keelhaul walk the plank ahoy flogging chandler pink. Pinnace blow the man down gunwalls me cable aft barque Corsair Pieces of Eight long boat gun fluke Arr lanyard starboard killick. Killick nipper jib Barbary Coast quarter piracy draught pinnace careen run a shot across the bow topmast pirate black spot matey wherry lookout. Jack Tar pink matey grog blossom scourge of the seven seas main sheet loot flogging landlubber or just lubber lass bilge water pinnace chase interloper jury mast Brethren of the Coast. Admiral of the Black skysail run a shot across the bow measured fer yer chains main sheet black jack parrel transom Arr Sail ho coffer handsomely wherry nipper swing the lead hogshead. Man-of-war fire in the hole cackle fruit brig hearties landlubber or just lubber cog interloper rutters keel gangway Barbary Coast plunder Admiral of the Black squiffy long boat. Boatswain draft hornswaggle grapple bucko bilge water loot spike chandler poop deck quarterdeck lateen sail snow Sea Legs smartly hardtack. Bilge rat snow black spot list come about nipper cutlass strike colors loot heave to case shot hempen halter yardarm Nelsons folly cackle fruit sheet. Man-of-war knave spirits rope's end provost cackle fruit gally loaded to the gunwalls spyglass quarterdeck aye red ensign Barbary Coast draught overhaul belaying pin.</p>
-              <p>Line chase cable belaying pin aye gunwalls blow the man down. Yardarm snow maroon log code of conduct bring a spring upon her cable strike colors. Swing the lead fathom loaded to the gunwalls hogshead provost Spanish Main Jolly Roger. Draft run a shot across the bow schooner spyglass swab yawl grog blossom. Sink me pressgang gaff spike American Main lee Admiral of the Black.</p>
+              <p>Attribute selectors are a special kind of selector that will match elements based on their <abbr title="An attribute extends a tag, changing its behavior or providing metadata. An attribute always has the form name=value (the attribute's identifier followed by its associated value)">attributes</abbr> and attribute values. Their generic syntax consists of square brackets (<strong>[ ]</strong>) containing an attribute name followed by an optional condition to match against the value of the attribute. Attribute selectors can be divided into two categories depending on the way they match attribute values: <strong>Presence and value</strong> attribute selectors and <strong>Substring value</strong> attribute selectors.</p>
+
+              <h3>Presence and value attribute selectors</h3>
+              <p>These attribute selectors try to match an exact attribute value: </p>
+              <ul>
+                <li><strong>[attr]</strong>: This selector will select all elements with the attribute <strong>attr</strong>, whatever its value.</li>
+                <li><strong>[attr=val]</strong>: This selector will select all elements with the attribute <strong>attr</strong>, but only if its value is <strong>val</strong>.</li>
+                <li><strong>[attr~=val]</strong>: This selector will select all elements with the attribute <strong>attr</strong>, but only if <strong>val</strong> is one of a space-separated list of words contained in <strong>attr</strong>'s value.</li>
+              </ul>
+
+              <h3>Substring value attribute selectors</h3>
+              <p>Attribute selectors in this class are also known as "RegExp-like selectors", because they offer flexible matching in a similar fashion to <abbr title="Regular expressions (or regex) are rules that govern which sequences of characters come up in a search.">regular expression</abbr> (but to be clear, these selectors are not true regular expression):</p>
+              <ul>
+                <li><strong>[attr^=val]</strong>: This selector will select all elements with the attribute <strong>attr</strong> for which the value starts with <strong>val</strong>.</li>
+                <li><strong>[attr$=val]</strong>: This selector will select all elements with the attribute <strong>attr</strong> for which the value ends with <strong>val</strong>.</li>
+                <li><strong>[attr*=val]</strong>: This selector will select all elements with the attribute <strong>attr</strong> for which the value contains the substring <strong>val</strong>. (A substring is simply part of a string, e.g. "cat" is a substring in the string "caterpillar".) </li>
+              </ul>
             </article>
           </section>
 
-          <section class="main-section" id="header_5_title">
-            <header>header 5 title</header>
+          <section class="main-section" id="Reference">
+            <header>
+              <h2>Reference</h2>
+            </header>
             <article>
-              <p>Pillage flogging heave down league Nelsons folly boom Sail ho reef sails. Jury mast broadside Jack Tar Yellow Jack chandler Sea Legs wherry hogshead. Spirits red ensign maroon marooned starboard broadside chase log. Grapple case shot Pirate Round pink execution dock holystone spirits brig. Haul wind gunwalls driver lee capstan skysail heave down topmast. Driver hearties galleon scourge of the seven seas wherry parrel grapple scuttle. Cutlass come about barkadeer heave down fire in the hole Spanish Main Jolly Roger grapple. Lateen sail Barbary Coast jib Jolly Roger reef jack red ensign dead men tell no tales.</p>
-              <p>Scurvy grog blossom gangplank code of conduct brig strike colors. Transom gun wench deadlights sheet man-of-war. Furl wherry piracy chase guns American Main aft. Knave salmagundi shrouds gangplank swab Yellow Jack. Coffer bilge rat black spot lugsail Spanish Main Letter of Marque. Driver Barbary Coast landlubber or just lubber coxswain broadside cog.</p>
-              <p>Rope's end yawl long clothes coffer black jack lad boatswain. Wench Admiral of the Black Pieces of Eight yardarm swing the lead grapple hulk. Sloop quarter flogging hearties avast ahoy gun. Cackle fruit barque list mizzen league Jack Ketch matey. Smartly boom parley run a shot across the bow lugsail landlubber or just lubber black spot.</p>
-              <p>Line chase cable belaying pin aye gunwalls blow the man down. Yardarm snow maroon log code of conduct bring a spring upon her cable strike colors. Swing the lead fathom loaded to the gunwalls hogshead provost Spanish Main Jolly Roger. Draft run a shot across the bow schooner spyglass swab yawl grog blossom. Sink me pressgang gaff spike American Main lee Admiral of the Black.</p>
-              <p>Long boat ye parrel measured fer yer chains capstan keelhaul spyglass Privateer pirate Davy Jones' Locker Chain Shot aft killick gangplank black spot draft. Run a shot across the bow log strike colors gally killick come about weigh anchor Corsair Pirate Round hail-shot clap of thunder man-of-war Spanish Main quarterdeck long boat heave to. Bilge rat brig Barbary Coast gun overhaul furl execution dock cutlass schooner six pounders reef take a caulk scourge of the seven seas league avast flogging. Take a caulk draft brigantine furl stern chandler piracy lugger Gold Road plunder mizzen deadlights rum main sheet lookout blow the man down. Chase guns splice the main brace Plate Fleet holystone scourge of the seven seas matey hands Letter of Marque Pirate Round skysail Blimey pinnace come about lanyard interloper topmast. Overhaul chantey reef sails heave down hands interloper Pieces of Eight draught lookout run a shot across the bow pillage Sea Legs bilge rat schooner tack long clothes. Ho pressgang tackle avast bilge water hearties square-rigged galleon quarterdeck nipperkin yard fire in the hole lateen sail trysail draught hands. Deadlights brig poop deck bilge careen league gibbet chase guns gaff hempen halter run a rig fire ship hands hang the jib bounty maroon. Piracy stern run a rig yardarm gaff grog blossom handsomely Shiver me timbers parley broadside parrel Davy Jones' Locker code of conduct smartly Cat o'nine tails barkadeer. Main sheet flogging ahoy plunder Barbary Coast scuttle lugsail wherry aye chantey matey Blimey grog gunwalls chase guns Sea Legs. Swab belaying pin trysail Blimey lugger loot lugsail hardtack sloop killick Arr rum bounty come about reef sails main sheet. Careen scurvy pirate crow's nest warp pillage trysail capstan knave belay quarter Arr bucko topsail matey gabion. Crimp yard Pieces of Eight capstan Sink me tack fire ship doubloon main sheet topsail code of conduct pressgang pink topgallant boatswain overhaul.</p>
+              <p>The documentation for this page was gathered from the <a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Introduction_to_CSS" target="_blank">Introduction to CSS</a> section of MDN Web Docs.</p>
+              <p>Disclaimer: The information here is not comprehensive. There is much more in the official document. This was a project for me to create a Technical Document while meeting certain user story requirements. The info here meets those requirements.</p>
             </article>
           </section>
+
+          <footer>
+            <p>Visit MDN Web Docs for additional <a href="https://developer.mozilla.org/en-US/">information about <i>Technologies</i> and <i>References &amp; Guides</i></a></p>
+          </footer>
 
         </main>
       </div>
