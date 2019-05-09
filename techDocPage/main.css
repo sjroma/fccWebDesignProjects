@@ -50,6 +50,10 @@ ol {
   list-style-position: inside;
 }
 
+pre {
+  font-size: 100%;
+}
+
 code {
   background-color: #f7f7f7;
   border-radius: 4px;
