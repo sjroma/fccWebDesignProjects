@@ -45,7 +45,7 @@ input[type=text], input[type=email], input[type=number] {
   padding-right: 20px;
 }
 
-em {
+b {
   color: red;
 }
 
