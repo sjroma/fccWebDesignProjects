@@ -8,7 +8,6 @@
 html,
 body {
   font-family: "Open Sans", sans-serif;
-  scroll-behavior: smooth;
 }
 
 #navbar {
@@ -18,7 +17,7 @@ body {
 }
 
 #navbar header {
-  color: #5a5d63;
+  color: #333438;
   font-size: larger;
   text-align: center;
 }
@@ -32,7 +31,7 @@ body {
 }
 
 .title {
-  color: #5a5d63;
+  color: #333438;
   padding-top: 60px;
 }
 
@@ -42,7 +41,7 @@ body {
 }
 
 h3 {
-  color: #5a5d63;
+  color: #6e727a;
 }
 
 ul,
