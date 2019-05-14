@@ -14,6 +14,7 @@ body {
   align-items: flex-start;
   border-right: solid;
   border-color: #9099a8;
+  padding-top: 30px;
 }
 
 #navbar header {
