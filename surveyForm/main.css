@@ -12,7 +12,7 @@ html, body {
 #container {
   background-color: #F9F9F9;
   border-radius: 4px;
-  margin: 0 auto;
+  margin: 0px auto 10px auto;
   max-width: 80%;
   padding: 20px;
 }
