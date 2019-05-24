@@ -73,6 +73,7 @@ code {
 .warn {
   background-color: #f74545;
   border-radius: 4px;
+  color: #fff;
   padding-left: 5px;
 }
 
