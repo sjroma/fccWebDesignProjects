@@ -1,0 +1,96 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+}
+
+.navbar-top {
+  background-color: lightblue;
+  padding: 16px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.navbar-top a {
+  color: darkcyan;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.navbar-top a:hover {
+  background: #ddd;
+  color: black;
+}
+
+#welcome-section {
+  background-color: lightblue;
+  font-size: larger;
+  height: 100vh;
+}
+
+#welcome-section h1 {
+  padding-top: 100px;
+}
+
+.projects {
+  background-color: lightcoral;
+  padding-top: 25px;
+  width: auto;
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: center;
+}
+
+.project-tile {
+  display: flex;
+  border: 2px solid green;
+}
+
+.project-title {
+  text-decoration: none;
+}
+
+.image {
+  height: 200px;
+}
+
+#contact {
+  background-color: lightgreen;
+  display: flex;
+  height: 50vh;
+  padding-top: 25px;
+}
+
+.section-title {
+  padding-top: 25px;
+}
+
+.logo-image {
+  border: 2px solid #111;
+  height: 75px;
+  width: 75px;
+}
+
+@media all and (max-width:800px) {
+  .flex-container {
+    /* When on medium sized screens, we center it by evenly distributing empty space around items */
+    justify-content: space-around;
+  }
+}
+
+@media all and (max-width:500px) {
+  .flex-container {
+    /* On small screens, we are no longer using row direction but column */
+    flex-direction: column;
+  }
+}
