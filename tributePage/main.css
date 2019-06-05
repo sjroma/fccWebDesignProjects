@@ -1,9 +1,7 @@
-@import url('https://fonts.googleapis.com/css?family=Raleway:400,400i,700,700i');
-
 html,
 body {
   background-color: #e0b78d; /* burlywood */
-  font-family: "Raleway", "Verdana", sans-serif;
+  font-family: "Raleway", sans-serif;
   text-align: center;
 }
 
@@ -36,8 +34,8 @@ body {
   min-width: 85%;
 }
 
-em {
-  font-weight: 600;
+i {
+  font-weight: 500;
 }
 
 ul {
