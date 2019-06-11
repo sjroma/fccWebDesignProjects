@@ -17,3 +17,5 @@
 * **User Story #8:** The `<img>` element should responsively resize, relative to the width of its parent element, without exceeding its original size.  
 * **User Story #9:** The `<img>` element should be centered within its parent element. 
 * Once done, submit the URL to your working project with all its tests passing.  
+
+##### ~/freeCodeCamp/fccWebDesignProjects/tributePage  
