@@ -57,16 +57,18 @@
         </select></p>
 
       <div class="gear-section">
-        <p>Do you wear protective gear?</p>
-        <label class="radiob" for="yes">
-          <input id="yes" type="radio" name="safety-gear" value="yes">Yes
-        </label>
-        <label class="radiob" for="sometimes">
-          <input id="sometimes" type="radio" name="safety-gear" value="sometimes">Sometimes
-        </label>
-        <label class="radiob" for="no">
-          <input id="no" type="radio" name="safety-gear" value="no">No
-        </label>
+        <fieldset class="fieldset">
+          <legend>Do you wear protective gear?</legend>
+          <label class="radiob" for="yes">
+            <input id="yes" type="radio" name="safety-gear" value="yes">Yes
+          </label>
+          <label class="radiob" for="sometimes">
+            <input id="sometimes" type="radio" name="safety-gear" value="sometimes">Sometimes
+          </label>
+          <label class="radiob" for="no">
+            <input id="no" type="radio" name="safety-gear" value="no">No
+          </label>
+        </fieldset>
 
         <div class="gear-worn">
           <fieldset class="fieldset">
@@ -102,7 +104,7 @@
         </div>
 
         <div class="importance">
-          <p>On a scale of 1 to 5, with 1 being not important and 5 being very important, score each of the following based on your decision when choosing protective gear</p>
+          <p>Score each of the following based on your decision when choosing protective gear</p>
           <div class="col-25" id="style">Style</div>
           <select class="dropdown col-75" id="style-score">
             <option value="">--Please select one--</option>
@@ -157,13 +159,15 @@
       </div>
 
       <div class="mods">
-        <p>Have you made modifications to your motorcycle to make it more visible?</p>
-        <label class="radiob" for="yay">
-          <input id="yay" type="radio" name="modifications" value="yes">Yes
-        </label>
-        <label class="radiob" for="nay">
-          <input id="nay" type="radio" name="modifications" value="no">No
-        </label>
+        <fieldset class="fieldset">
+          <legend>Have you made modifications to your motorcycle to make it more visible?</legend>
+          <label class="radiob" for="yay">
+            <input id="yay" type="radio" name="modifications" value="yes">Yes
+          </label>
+          <label class="radiob" for="nay">
+            <input id="nay" type="radio" name="modifications" value="no">No
+          </label>
+        </fieldset>
 
         <div class="modifications">
           <fieldset class="fieldset">
