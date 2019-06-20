@@ -30,6 +30,10 @@ body {
   color: #ccc;
 }
 
+fieldset {
+  line-height: 1.5;
+}
+
 #description {
   font-size: larger;
   font-weight: 500;
