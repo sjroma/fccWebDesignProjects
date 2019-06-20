@@ -24,6 +24,12 @@ body {
   padding: 10px;
 }
 
+.radiob:hover, .cbox:hover {
+  background-color: #333;
+  border-radius: 4px;
+  color: #ccc;
+}
+
 #description {
   font-size: larger;
   font-weight: 500;
