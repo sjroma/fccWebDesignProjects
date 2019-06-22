@@ -1,12 +1,18 @@
-html,
 body {
   background-color: #e0b78d; /* burlywood */
+  background-image: url(images/parchment.jpg);
+  background-size: cover;
   font-family: "Raleway", sans-serif;
   text-align: center;
 }
 
 #main {
   width: 100%;
+}
+
+#title {
+  color: #ccc;
+  text-shadow: 1px 1px 2px #000;
 }
 
 #image {
