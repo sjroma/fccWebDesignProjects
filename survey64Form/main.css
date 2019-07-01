@@ -1,0 +1,100 @@
+body {
+  background-color: #FFC0CB;
+  background-image: url(images/albumCover.jpg);
+  background-size: cover;
+  font-family: 'Rubik', sans-serif;
+  text-align: center;
+}
+
+#title {
+  color: #333;
+  text-shadow: 1px 1px 2px #eee;
+}
+
+#container {
+  background: rgba(249, 249, 249, 0.8);
+  border-radius: 10px;
+  margin: 0px auto 10px auto;
+  max-width: 60%;
+  padding: 20px;
+}
+
+.description {
+  font-size: 1.5em;
+}
+
+input:required {
+  background-color: #FFC0CB;
+}
+
+.name, .email, .age {
+  padding-bottom: 5px;
+}
+
+b {
+  color: red;
+}
+
+input[type=text], input[type=email], input[type=number] {
+  border-radius: 4px;
+}
+
+#number-label {
+  padding-right: 20px;
+}
+
+.input-area {
+  font-size: small;
+  height: 25px;
+  padding-left: 10px;
+  width: 280px;
+}
+
+.lyrics {
+  font-family: Mali, sans-serif;
+  text-align: inherit;
+}
+
+.fieldset {
+  border-radius: 4px;
+  display: inline-grid;
+  text-align: left;
+  line-height: 1.5;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.comments {
+  margin-bottom: unset;
+  text-align: left;
+}
+
+textarea {
+  background-color: #FFC0CB;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: small;
+  height: 150px;
+  padding: 10px 15px;
+  resize: none;
+  width: 100%;
+}
+
+button {
+  background-color: #FF0000;
+  border-radius: 10px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 15px;
+  height: 40px;
+  width: 80px;
+}
+
+a {
+  text-decoration: none;
+}

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>When I'm Sixty-Four Survey</title>
+  <link href="https://fonts.googleapis.com/css?family=Rubik:400,500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Mali&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="main.css">
+  <style>
+  </style>
+</head>
+
+<body>
+
+  <h1 id="title">A Beatles Survey</h1>
+  <div id="container">
+    <p class="description"><i>When I'm Sixty-Four</i></p>
+
+    <form id="survey-form" action="#" method="GET">
+
+      <div id="personal-info">
+        <div class="name">
+          <label for="name" id="name-label">Name <b>*</b></label>
+          <input class="input-area" id="name" type="text" placeholder="Your Name" required>
+        </div>
+        <div class="email">
+          <label for="email" id="email-label">Email <b>*</b></label>
+          <input class="input-area" id="email" type="email" placeholder="Your Email" required>
+        </div>
+        <div class="age">
+          <label for="number" id="number-label">Age</label>
+          <input class="input-area" id="number" type="number" placeholder="Optional" min="18" max="99">
+        </div>
+      </div>
+
+      <div class="lyrics">
+        <p>When I get older losing my hair<br>
+          Many years from now<br>
+          Will you still be sending me</p>
+      </div>
+      <div class="question-set">
+        <fieldset class="fieldset">
+          <legend>Choose all that apply; </legend>
+          <label for="valentine">
+            <input id="valentine" type="checkbox" class="will-you" value="vtine">A Valentine
+          </label>
+          <label for="bday-greet">
+            <input id="bday-greet" type="checkbox" class="will-you" value="bday">Birthday Greetings
+          </label>
+          <label for="wine">
+            <input id="wine" type="checkbox" class="will-you" value="wine">Bottle of Wine
+          </label>
+        </fieldset>
+      </div>
+
+      <div class="lyrics">
+        <p>If I stay out til quarter to three<br>
+          Would you lock the door<br>
+          Will you still need me, will you still feed me<br>
+          When I'm sixty-four</p>
+      </div>
+      <div class="response">
+        <fieldset class="fieldset">
+          <legend> ? </legend>
+          <label class="radiob" for="yes">
+            <input id="yes" type="radio" name="need-me" value="yes">Yes
+          </label>
+          <label class="radiob" for="sometimes">
+            <input id="sometimes" type="radio" name="need-me" value="maybe">Maybe
+          </label>
+          <label class="radiob" for="no">
+            <input id="no" type="radio" name="need-me" value="no">No
+          </label>
+        </fieldset>
+      </div>
+      
+      <div class="lyrics">
+        <p>You'll be older too<br>
+        And if you say the word<br>
+        I could stay with you</p>
+        
+        <p>I could be handy, mending a fuse<br>
+        When your lights have gone<br>
+        You can knit a sweater by the fireside<br>
+        Sunday mornings go for a ride<br>
+        Doing the garden, digging the weeds<br>
+        Who could ask for more</p>
+        
+        <p>Will you still need me, will you still feed me<br>
+        When I'm sixty-four</p>
+        
+        <p>Every summer we can rent a cottage<br>
+        In the Isle of Wight, if it's not too dear<br>
+        We shall scrimp and save<br>
+        Grandchildren on your knee<br>
+        Vera, Chuck and Dave</p>
+        
+        <p>Send me a postcard, drop me a line<br>
+        Stating point of view<br>
+        Indicate precisely what you mean to say<br>
+        Yours sincerely, wasting away</p>
+        
+        <p>Give me your answer, fill in a form<br>
+        Mine for evermore<br>
+        Will you still need me, will you still feed me<br>
+        When I'm sixty-four</p>
+      </div>
+
+      <p class="comments">Comments:</p>
+      <textarea id="comments" rows="8" cols="50" placeholder="Additional comments"></textarea>
+      <button id="submit" type="submit">Submit</button>
+    </form>
+    <footer>
+      <p>A song by the English rock band <a href="https://en.wikipedia.org/wiki/The_Beatles" target="_blank"> The Beatles</a>, written by <a href="https://en.wikipedia.org/wiki/Paul_McCartney" target="_blank">Paul McCartney</a> (credited to <a href="https://en.wikipedia.org/wiki/Lennon%E2%80%93McCartney" target="_blank">Lennon–McCartney</a>) and released on their 1967 album <a href="https://en.wikipedia.org/wiki/Sgt._Pepper%27s_Lonely_Hearts_Club_Band" target="_blank">Sgt. Pepper's Lonely Hearts Club Band</a>.</p>
+    </footer>
+  </div>
+
+</body>
+
+</html>
