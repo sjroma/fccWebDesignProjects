@@ -1,6 +1,6 @@
 # Responsive Web Design Projects - Build a Survey Form
 
-## Click to see [my Survey Form](https://codepen.io/sroma/full/qgpdrp) on codepen.io
+## Click to see [my Survey Form](https://codepen.io/sroma/full/gNXVaJ) on codepen.io
 
 * **Objective:** Build a [CodePen.io](https://codepen.io) app that is functionally similar to this: [FCC: Survey Form](https://codepen.io/freeCodeCamp/full/VPaoNP).  
 * Fulfill the below user stories and get all of the tests to pass. Give it your own personal style.  
