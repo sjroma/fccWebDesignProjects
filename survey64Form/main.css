@@ -35,7 +35,12 @@ b {
   color: red;
 }
 
+.hidden {
+  visibility: hidden;
+}
+
 input[type=text], input[type=email], input[type=number] {
+  border: 1px solid #999;
   border-radius: 4px;
 }
 
@@ -89,10 +94,15 @@ button {
   background-color: #FF0000;
   border-radius: 10px;
   color: #fff;
-  cursor: pointer;
   font-size: 15px;
   height: 40px;
   width: 80px;
+}
+
+button:hover {
+  background-color: #fff;
+  color: #ff0000;
+  cursor: pointer;
 }
 
 a {
