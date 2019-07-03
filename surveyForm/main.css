@@ -138,8 +138,13 @@ button {
   background-color: #59ACE0;
   border-radius: 4px;
   color: white;
-  cursor: pointer;
   font-size: 15px;
   height: 40px;
   width: 80px;
+}
+
+button:hover {
+  background-color: #1d6fa3;
+  cursor: pointer;
+  transition: background-color 0.5s;
 }
