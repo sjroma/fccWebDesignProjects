@@ -17,14 +17,16 @@ body {
   padding: 20px;
 }
 
-.gear-section, .mods {
-  background: rgba(0,0,0,0.03);
+.gear-section,
+.mods {
+  background: rgba(0, 0, 0, 0.03);
   border-radius: 4px;
   margin-bottom: 5px;
   padding: 10px;
 }
 
-.radiob:hover, .cbox:hover {
+.radiob:hover,
+.cbox:hover {
   background-color: #333;
   border-radius: 4px;
   color: #ccc;
@@ -43,11 +45,15 @@ input:required {
   background-color: lightyellow;
 }
 
-.name, .email, .age {
+.name,
+.email,
+.age {
   padding-bottom: 5px;
 }
 
-input[type=text], input[type=email], input[type=number] {
+input[type=text],
+input[type=email],
+input[type=number] {
   border-radius: 4px;
 }
 
@@ -72,7 +78,8 @@ b {
   width: 160px;
 }
 
-.gear-worn, .modifications {
+.gear-worn,
+.modifications {
   margin: 0 auto;
   max-width: 75%;
   min-width: 95%;
@@ -85,7 +92,8 @@ b {
   text-align: left;
 }
 
-.protective-gear, .modified {
+.protective-gear,
+.modified {
   margin-left: 15px;
   margin-right: 10px;
 }
@@ -118,6 +126,7 @@ ul {
 }
 
 .comments {
+  display: none;
   margin-bottom: unset;
   text-align: left;
 }
@@ -127,11 +136,11 @@ textarea {
   border: 1px solid #ccc;
   border-radius: 4px;
   box-sizing: border-box;
-  font-size: small;
+  font-size: inherit;
   height: 150px;
   padding: 10px 15px;
   resize: none;
-  width: 100%;
+  width: 90%;
 }
 
 button {
