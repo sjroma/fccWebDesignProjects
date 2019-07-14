@@ -65,6 +65,7 @@ input[type=text], input[type=email], input[type=number] {
   display: inline-grid;
   text-align: left;
   line-height: 1.5;
+  width: 65%;
 }
 
 ul {
@@ -74,6 +75,7 @@ ul {
 }
 
 .comments {
+  display: none;
   margin-bottom: unset;
   text-align: left;
 }
@@ -83,11 +85,11 @@ textarea {
   border: 1px solid #ccc;
   border-radius: 4px;
   box-sizing: border-box;
-  font-size: small;
+  font-size: inherit;
   height: 150px;
   padding: 10px 15px;
   resize: none;
-  width: 100%;
+  width: 85%;
 }
 
 button {
@@ -96,7 +98,7 @@ button {
   color: #fff;
   font-size: 15px;
   height: 40px;
-  width: 80px;
+  width: 90px;
 }
 
 button:hover {
