@@ -1,6 +1,6 @@
 # Responsive Web Design Projects - Build a Technical Documentation Page  
 
-## Click to see my [Technical Documentation Page](https://codepen.io/sroma/full/rbxwRR) on codepen.io  
+## Click to see my [Technical Documentation Page](https://codepen.io/sroma/full/rXJWNE) on codepen.io  
 
 * **Objective:** Build a codepen.io app that is functionally similar to this: [FCC: Technical Documentation Page](https://codepen.io/freeCodeCamp/full/NdrKKL).  
 * Fulfill the below user stories and get all of the tests to pass. Give it your own personal style.  
