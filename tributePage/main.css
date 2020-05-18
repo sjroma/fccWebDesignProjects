@@ -24,13 +24,6 @@ body {
   max-width: 100%;
 }
 
-#img-div {
-  display: center;
-  height: auto;
-  margin: auto;
-  max-width: 100%;
-}
-
 #img-caption {
   padding-top: 5px;
 }
@@ -49,6 +42,10 @@ i {
 ul {
   list-style-type: none;
   text-align: left;
+}
+
+blockquote {
+  font-weight: 700;
 }
 
 #tribute-link {
