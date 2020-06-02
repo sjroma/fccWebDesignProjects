@@ -22,21 +22,21 @@
       <div id="personal-info">
         <div class="name">
           <label for="name" id="name-label">Name <b>*</b></label>
-          <input class="input-area" id="name" type="text" placeholder="Joe Rider" required>
+          <input class="input-area" id="name" name="name" type="text" placeholder="Joe Rider" required>
         </div>
         <div class="email">
           <label for="email" id="email-label">Email <b>*</b></label>
-          <input class="input-area" id="email" type="email" placeholder="guest@email.com" required>
+          <input class="input-area" id="email" name="email" type="email" placeholder="guest@email.com" required>
         </div>
         <div class="age">
           <label for="number" id="number-label">Age</label>
-          <input class="input-area" id="number" type="number" placeholder="18" min="18" max="99">
+          <input class="input-area" id="number" name="age" type="number" placeholder="18" min="18" max="99">
         </div>
       </div>
 
       <p>How many years have you been riding?
         <select class="dropdown" name="years-ride">
-          <option value=" " selected>--Please select one--</option>
+          <option disabled selected value>--Please select one--</option>
           <option value="under one">0 - 11 months</option>
           <option value="1-5">1 - 5 years</option>
           <option value="6-10">6 - 10 years</option>
@@ -74,31 +74,31 @@
           <fieldset class="fieldset">
             <legend>What protective gear do you wear? (Choose all that apply)</legend>
             <label class="cbox" for="helmet">
-              <input id="helmet" type="checkbox" class="protective-gear" value="helmet">Helmet
+              <input id="helmet" type="checkbox" class="protective-gear" name="gear-worn" value="helmet">Helmet
             </label>
             <label class="cbox" for="eye-protection">
-              <input id="eye-protection" type="checkbox" class="protective-gear" value="eye">Eye protection
+              <input id="eye-protection" type="checkbox" class="protective-gear" name="gear-worn" value="eye">Eye protection
             </label>
             <label class="cbox" for="gloves">
-              <input id="gloves" type="checkbox" class="protective-gear" value="gloves">Gloves
+              <input id="gloves" type="checkbox" class="protective-gear" name="gear-worn" value="gloves">Gloves
             </label>
             <label class="cbox" for="long-pants">
-              <input id="long-pants" type="checkbox" class="protective-gear" value="pants">Long pants
+              <input id="long-pants" type="checkbox" class="protective-gear" name="gear-worn" value="pants">Long pants
             </label>
             <label class="cbox" for="jacket">
-              <input id="jacket" type="checkbox" class="protective-gear" value="jacket">Jacket
+              <input id="jacket" type="checkbox" class="protective-gear" name="gear-worn" value="jacket">Jacket
             </label>
             <label class="cbox" for="body-armor">
-              <input id="body-armor" type="checkbox" class="protective-gear" value="armor">Body Armor
+              <input id="body-armor" type="checkbox" class="protective-gear" name="gear-worn" value="armor">Body Armor
             </label>
             <label class="cbox" for="riding-boots">
-              <input id="riding-boots" type="checkbox" class="protective-gear" value="boots">Riding Boots
+              <input id="riding-boots" type="checkbox" class="protective-gear" name="gear-worn" value="boots">Riding Boots
             </label>
             <label class="cbox" for="reflective">
-              <input id="reflective" type="checkbox" class="protective-gear" value="reflective">Reflective vest
+              <input id="reflective" type="checkbox" class="protective-gear" name="gear-worn" value="reflective">Reflective vest
             </label>
             <label class="cbox" for="none">
-              <input id="none" type="checkbox" class="protective-gear" value="none">Don't wear protective gear
+              <input id="none" type="checkbox" class="protective-gear" name="gear-worn" value="none">Don't wear protective gear
             </label>
           </fieldset>
         </div>
@@ -107,7 +107,7 @@
           <p>Score each of the following based on your decision when choosing protective gear</p>
           <div class="col-25" id="style">Style</div>
           <select class="dropdown col-75" id="style-score">
-            <option value="">--Please select one--</option>
+            <option disabled selected value>--Please select one--</option>
             <option value="1">1 - Not important</option>
             <option value="2">2 - A little</option>
             <option value="3">3 - Doesn't impact my decision</option>
@@ -117,7 +117,7 @@
           <div style="clear:both"></div>
           <div class="col-25" id="Comfort">Comfort</div>
           <select class="dropdown col-75" id="comfort-score">
-            <option value="">--Please select one--</option>
+            <option disabled selected value>--Please select one--</option>
             <option value="1">1 - Not important</option>
             <option value="2">2 - A little</option>
             <option value="3">3 - Doesn't impact my decision</option>
@@ -127,7 +127,7 @@
           <div style="clear:both"></div>
           <div class="col-25" id="Price">Price</div>
           <select class="dropdown col-75" id="price-score">
-            <option value="">--Please select one--</option>
+            <option disabled selected value>--Please select one--</option>
             <option value="1">1 - Not important</option>
             <option value="2">2 - A little</option>
             <option value="3">3 - Doesn't impact my decision</option>
@@ -137,7 +137,7 @@
           <div style="clear:both"></div>
           <div class="col-25" id="Protection">Protection</div>
           <select class="dropdown col-75" id="protection-score">
-            <option value="">--Please select one--</option>
+            <option disabled selected value>--Please select one--</option>
             <option value="1">1 - Not important</option>
             <option value="2">2 - A little</option>
             <option value="3">3 - Doesn't impact my decision</option>
@@ -147,7 +147,7 @@
           <div style="clear:both"></div>
           <div class="col-25" id="Visibility">Visibility</div>
           <select class="dropdown col-75" id="visibility-score">
-            <option value="">--Please select one--</option>
+            <option disabled selected value>--Please select one--</option>
             <option value="1">1 - Not important</option>
             <option value="2">2 - A little</option>
             <option value="3">3 - Doesn't impact my decision</option>
@@ -173,19 +173,19 @@
           <fieldset class="fieldset">
             <legend>What modifications have you made? (Chose all that apply)</legend>
             <label class="cbox" for="headlight">
-              <input id="headlight" type="checkbox" class="modified" value="headlight">Headlight modulator
+              <input id="headlight" type="checkbox" class="modified" name="mods-made" value="headlight">Headlight modulator
             </label>
             <label class="cbox" for="led">
-              <input id="led" type="checkbox" class="modified" value="led">LED Headlight/Taillights
+              <input id="led" type="checkbox" class="modified" name="mods-made" value="led">LED Headlight/Taillights
             </label>
             <label class="cbox" for="reflect">
-              <input id="reflect" type="checkbox" class="modified" value="reflective">Reflective stickers or Tape
+              <input id="reflect" type="checkbox" class="modified" name="mods-made" value="reflective">Reflective stickers or Tape
             </label>
             <label class="cbox" for="brake">
-              <input id="brake" type="checkbox" class="modified" value="brake">Modulating brake lights
+              <input id="brake" type="checkbox" class="modified" name="mods-made" value="brake">Modulating brake lights
             </label>
             <label class="cbox" for="other">
-              <input id="other" type="checkbox" class="modified" value="other">Flags or Pennants
+              <input id="other" type="checkbox" class="modified" name="mods-made" value="other">Flags or Pennants
             </label>
           </fieldset>
         </div>
@@ -193,7 +193,7 @@
 
       <div class="comment-area">
         <p class="comments">Comments</p>
-        <textarea id="comments" placeholder="Additional comments"></textarea>
+        <textarea id="comments" name="comments" placeholder="Additional comments"></textarea>
       </div>
       <div class="submit"><button id="submit" type="submit">Submit</button></div>
     </form>
