@@ -60,6 +60,10 @@ input[type=text], input[type=email], input[type=number] {
   text-align: inherit;
 }
 
+.song-lyrics {
+  white-space: pre-line;
+}
+
 .fieldset {
   border-radius: 4px;
   display: inline-grid;
