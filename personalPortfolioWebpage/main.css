@@ -5,92 +5,173 @@
 }
 
 body {
-  font-family: 'Open Sans', sans-serif;
-  text-align: center;
+  font-family: 'Roboto', sans-serif;
 }
 
-.navbar-top {
-  background-color: lightblue;
-  padding: 16px;
-  position: fixed;
+.header {
+  position: sticky;
   top: 0;
+  background-color: grey;
+  box-shadow: 0px 3px 3px #2b2a2a;
+  font-family: 'Gayathri', sans-serif;
+  font-weight: 700;
+}
+
+.nav-bar {
+  padding: 1em;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
   width: 100%;
 }
 
-.navbar-top a {
-  color: darkcyan;
-  padding: 14px 16px;
+.nav-bar a {
+  color: #2b2f26;
+  font-size: 1.2em;
+  padding-right: 3.5em;
+  padding-left: 3.5em;
   text-decoration: none;
+  text-transform: uppercase;
+  transition: all .15s ease-in-out;
 }
 
-.navbar-top a:hover {
-  background: #ddd;
-  color: black;
+.nav-bar a:hover {
+  color: #000;
 }
 
-#welcome-section {
-  background-color: lightblue;
-  font-size: larger;
-  height: 100vh;
+.links {
+  
 }
 
-#welcome-section h1 {
-  padding-top: 100px;
+.welcome-container {
+  background-color: grey;
+  background-image: url(images/rubberDuck.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.welcome-header {
+  background: rgba(249, 249, 249, 0.8);
+  background: rgba(38, 38, 38, 0.75);
+  color: lightgrey;
+  border-radius: 4px;
+  font-size: 3em;
+  margin: auto;
+  padding: 2.5rem 0.625rem;
+  text-align: center;
+  width: 85%;
+}
+
+.about-container {
+  padding-top: 3.5em;
+  padding-bottom: 3.5em;
+  background-color: grey;
+  background-image: url(images/textured.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 50vh;
+  display: flex;
+  align-items: center;
+}
+
+.about-header {
+  background: rgba(38, 38, 38, 0.75);
+  color: lightgrey;
+  border-radius: 4px;
+  font-size: 2em;
+  margin: auto;
+  padding: 2.5rem 0.625rem;
+  text-align: center;
+  width: 85%;
 }
 
 .projects {
-  background-color: lightcoral;
-  padding-top: 25px;
-  width: auto;
+  padding-top: 3.5em;
+  background-color: grey;
+  background-image: url(images/textured.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 100vh;
 }
 
-.flex-container {
+.projects-title {
+  font-size: 2em;
+  text-align: center;
+/*  padding: 0.2em;*/
+}
+
+.projects-container {
   display: flex;
-  flex-wrap: wrap;
+  align-items: center;
   justify-content: space-around;
-  align-content: center;
 }
 
 .project-tile {
-  display: flex;
-  border: 2px solid green;
+  text-align: center;
+  width: 400px;
+  height: 350px;
 }
 
-.project-title {
-  text-decoration: none;
-}
-
-.image {
+.project-image {
+  border-radius: 0.5em;
+  width: 356px;
   height: 200px;
 }
 
-#contact {
-  background-color: lightgreen;
+.project-title {
+  font-size: 1.3em;
+  text-decoration: none;
+}
+
+.contact-container {
+  background-color: grey;
+  background-image: url(images/textured.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 50vh;
   display: flex;
-  height: 50vh;
-  padding-top: 25px;
+  align-items: center;
 }
 
-.section-title {
-  padding-top: 25px;
+.contact-info {
+  background: rgba(249, 249, 249, 0.3);
+  border-radius: .5em;
+  display: flex;
+  justify-content: space-around;
+  margin: auto;
+  padding: 2.5rem 0.625rem;
+  text-align: center;
+  width: 90%;
 }
 
-.logo-image {
-  border: 2px solid #111;
-  height: 75px;
-  width: 75px;
+.contact-link a {
+  color: #2b2f26;
+  text-decoration: none;
+  transition: all .15s ease-in-out;
 }
 
-@media all and (max-width:800px) {
-  .flex-container {
-    /* When on medium sized screens, we center it by evenly distributing empty space around items */
-    justify-content: space-around;
+.footer-container {
+  background-color: grey;
+  background-image: url(images/textured.jpg);
+  font-size: 1.1em;
+  padding: 1em;
+}
+
+@media screen and (max-width:900px) {
+  .nav-bar a {
+    padding-right: 1.5em;
+    padding-left: 1.5em;
   }
-}
-
-@media all and (max-width:500px) {
-  .flex-container {
-    /* On small screens, we are no longer using row direction but column */
+  
+  .projects-container {
+    display: flex;
     flex-direction: column;
   }
 }
