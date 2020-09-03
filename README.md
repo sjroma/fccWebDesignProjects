@@ -42,7 +42,7 @@ and then culminates with five projects for the student to complete in order to b
   - [x] Build a Survey Form  
   - [ ] Build a Product Landing Page  
   - [x] Build a Technical Documentation Page  
-  - [ ] Build a Personal Porfolio Webpage  
+  - [x] Build a Personal Porfolio Webpage  
   
 ##### Course description as of 16 Sep 2019
 
