@@ -2,76 +2,96 @@
 <html lang="en">
 
 <head>
-  <meta charset="utf-8">
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>fCC: Personal Portfolio Webpage</title>
-  <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+  <title>fCC: Roma's Personal Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Gayathri:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="main.css">
-  <style>
-  </style>
+  <script src="https://kit.fontawesome.com/8102a39f82.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-  <nav id="navbar" class="navbar-top">
-    <a class="nav-link" href="#home">Welcome</a>
-    <a class="nav-link" href="#projects">Projects</a>
-    <a class="nav-link" href="#contact">Contact</a>
-  </nav>
 
-  <main class="main-body">
+  <header class="header">
+    <nav id="navbar" class="nav-bar">
+      <span class="links">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </span>
+    </nav>
+  </header>
 
-    <div id="home">
-      <div id="welcome-section">
-        <h1 id="home" class="section-title">Roma's Portfolio</h1>
-        <p>Web App tester, aspiring Developer</p>
+  <section id="welcome-section" class="welcome">
+    <div class="welcome-container">
+      <div class="welcome-header">
+        <h1>Roma's Portfolio</h1>
       </div>
     </div>
+  </section>
 
-    <div id="projects" class="projects">
-      <h2 class="section-title">HTML &amp; CSS</h2>
-
-      <div class="flex-container">
-        <div class="project-tile">
-          <a class="project-title" href="https://codepen.io/sroma/full/OdzPea" target="_blank">
-            <img class="image" src="images/fccTributePage.png" alt="tribute page screenshot">Tribute Page</a></div>
-
-        <div class="project-tile">
-          <a class="project-title" href="https://codepen.io/sroma/full/qgpdrp" target="_blank">
-            <img class="image" src="images/fccSurveyForm.png" alt="survey form screenshot">Survey Form</a></div>
-
-        <div class="project-tile">
-          <a class="project-title" href="https://codepen.io/sroma/full/rbxwRR" target="_blank">
-            <img class="image" src="images/fccTechDocPage.png" alt="tecnical documentation page screenshot">Tech Doc Page</a></div>
-      </div>
-
-      <h2 class="section-title">JavaScript</h2>
-
-      <div class="flex-container">
-        <div class="project-tile">
-          <a class="project-title" href="https://sjroma.github.io/rps" target="_blank">
-            <img class="image" src="images/jsRPSLSv1.png" alt="link to rock paper scissors JavaScript game">Rock-Paper-Scissors v1</a></div>
-
-        <div class="project-tile">
-          <a class="project-title" href="https://sjroma.github.io/rpsls" target="_blank">
-            <img class="image" src="images/jsRPSLSv2.png" alt="link to rock paper scissors JavaScript game">Rock-Paper-Scissors v2</a></div>
+  <section id="about" class="about">
+    <div class="about-container">
+      <div class="about-header">
+        <h2>About Me</h2>
+        <p>I'm a web-app tester and an aspiring web-app developer</p>
+        <p>Also a motorcycle enthusiast actively involved with charity work</p>
       </div>
     </div>
+  </section>
 
-    <div id="contact" class="contact">
-      <h2 class="section-title">Contact</h2>
+  <section id="projects" class="projects">
+    <h1 class="projects-title">HTML &amp; CSS</h1>
 
-      <div class="flex-container">
-        <a id="profile-link" href="https://github.com/sjroma" target="_blank"><img class="logo-image" src="images/logo-github.jpg" alt="github logo">GitHub</a>
+    <div class="projects-container">
 
-        <a class="profile-link" href="https://www.freecodecamp.org/sjroma" target="_blank"><img class="logo-image" src="images/logo-fcc.png">freeCodeCamp</a>
-      </div>
+      <a class="project-tile" href="https://codepen.io/sroma/full/MMOPEZ" target="_blank">
+        <img class="project-image" src="images/fccTribute.jpg" alt="tribute page preview image">
+        <p class="project-title">FCC Tribute Page</p>
+      </a>
+
+      <a class="project-tile" href="https://codepen.io/sroma/full/gNXVaJ" target="_blank">
+        <img class="project-image" src="images/fccSurvey.jpg" alt="survey form preview image">
+        <p class="project-title">FCC Survey Form</p>
+      </a>
+
+      <a class="project-tile" href="https://codepen.io/sroma/full/rXJWNE" target="_blank">
+        <img class="project-image" src="images/fccTechDoc.jpg" alt="tech preview image">
+        <p class="project-title">FCC Technical Documentation Page</p>
+      </a>
+
     </div>
 
-    <footer class="footer">
-      <p>&copy; Roma</p>
-    </footer>
+    <!--    <h1 class="projects-title">JavaScript</h1>-->
 
-  </main>
+  </section>
+
+  <section id="contact">
+    <div class="contact-container">
+      <div class="contact-info">
+
+        <div class="contact-link">
+          <a class="fcc-link" href="https://freecodecamp.org" target="_blank"><i class="fab fa-free-code-camp"></i> freeCodeCamp</a>
+        </div>
+        <div class="contact-link">
+          <a id="profile-link" class="github-link" href="https://github.com/sjroma" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+        </div>
+        <div class="contact-link">
+          <a class="mobile-link" href="tel:1+555.555.5555"><i class="fas fa-mobile-alt"></i> Call me</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-container">
+      <h4>Copyright 2020, Roma</h4>
+    </div>
+  </footer>
+
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </body>
 
 </html>
