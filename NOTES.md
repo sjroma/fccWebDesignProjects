@@ -1,8 +1,8 @@
 # Notes  
 ```
 /* Set font size for easy rem calculations
-   * default document font size = 16px, 1rem = 16px, 100% = 16px  
-   * (100% / 16px) * 10 = 62.5%, 1rem = 10px, 62.5% = 10px  
+  * default document font size = 16px, 1rem = 16px, 100% = 16px  
+  * (100% / 16px) * 10 = 62.5%, 1rem = 10px, 62.5% = 10px  
 */
 ```  
 * Don’t be afraid to be descriptive with class names. It’ll be more semantic for yourself, and others who read your code. For example, if you have several two letter `id`'s that make sense to you now, they may not a year later and probably will never mean anything to other people. 
@@ -23,8 +23,9 @@ In your own personal projects that you create outside of freeCodeCamp some peopl
 CSS Grid for 2-axis layout, Flexbox for single axis (either X or Y) layout, as a general rule of thumb.
   * [Wes Bos has free courses](https://wesbos.com/courses/) for both Flexbox and Grid that are well written and quick and easy to go through.  
   
-* Elements in CSS layout are normally either block-level or inline (with exceptions for elements within flex, table and grid elements). So it’s the basis for all of CSS layout: it treats all elements like boxes or text. `display:block` makes them act like a block element regardless of what they were before (images are inline for example). `display:inline` makes them act like an inline element. `display:inline-block` makes it act like a block that is laid out inline. See [CSS display properties: block, inline, and inline-block — & how to tell the difference](https://medium.com/@DaphneWatson/css-display-properties-block-inline-and-inline-block-how-to-tell-the-difference-7d3a1e6e3051)
-* Including Google fonts, should I use the **link** or **import**?
+* Elements in CSS layout are normally either block-level or inline (with exceptions for elements within flex, table and grid elements). So it’s the basis for all of CSS layout: it treats all elements like boxes or text. `display:block` makes them act like a block element regardless of what they were before (images are inline for example). `display:inline` makes them act like an inline element. `display:inline-block` makes it act like a block that is laid out inline. See [CSS display properties: block, inline, and inline-block — & how to tell the difference](https://medium.com/@DaphneWatson/css-display-properties-block-inline-and-inline-block-how-to-tell-the-difference-7d3a1e6e3051)  
+
+* When using Google fonts, should I use the **link** or **import**?
   * For 90%+ of the cases you likely want the **&lt;link&gt;** tag. As a rule of thumb, you want to avoid **@import** rules because they defer the loading of the included resource until the file is fetched.  
   
 * 12 Easy Read Fonts
@@ -70,25 +71,25 @@ CSS Grid for 2-axis layout, Flexbox for single axis (either X or Y) layout, as a
 Make the container 100% of the viewport height (vh) and 100% of the viewport width (vw). Can be handy when creating containers you want to take up the full height of the window.  
 ```
 .container {
-	width: 100vw;
-	height: 100vh;
+  width: 100vw;
+  height: 100vh;
 }
 ```
 Center everything in the container both vertically and horizontally.  
 ```
 .container {
-	display: flex;
-	justify-content: center;
-	align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 ```
 Give every row inside of the container a bottom border, except for the last one. This helps keep the bottom of the container from having two borders, one from the last row and the one from the container.  
 ```
 .container {
-	border: 1px solid gray;
+  border: 1px solid gray;
 }
 .container .row:not(:last-child) {
-	border-bottom: 1px solid gray;
+  border-bottom: 1px solid gray;
 }
 ```
 Hovering a row will give it a gray background, unless it has the `.active-class`. This is great if you gave `.active-class` to one of the rows and want to show that you can click on the others, but can’t on the one that’s “active”.  
@@ -100,13 +101,13 @@ Hovering a row will give it a gray background, unless it has the `.active-class`
 Will capitalize only the first letter of the `<p>` tag.  
 ```
 p::first-letter {
-	text-transform: capitalize;
+  text-transform: capitalize;
 }
 ```
 Reverses the arrow horizontally, so if you have just one left arrow image and need a right arrow image, you can just use the left arrow image and use transform rotateY to flip it around.  
 ```
 .right-arrow {
-	transform: rotateY(180deg);
+  transform: rotateY(180deg);
 }
 ```
 Easily center anything in its parent container regardless of its dimensions
