@@ -116,6 +116,7 @@ body {
   text-align: center;
   width: 400px;
   height: 350px;
+  text-decoration: none;
 }
 
 .project-image {
@@ -126,7 +127,7 @@ body {
 
 .project-title {
   font-size: 1.3em;
-  text-decoration: none;
+  color: #2b2f26;
 }
 
 .contact-container {
