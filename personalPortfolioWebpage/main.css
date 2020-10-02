@@ -39,10 +39,6 @@ body {
   color: #000;
 }
 
-.links {
-  
-}
-
 .welcome-container {
   background-color: grey;
   background-image: url(images/rubberDuck.jpeg);
@@ -103,7 +99,7 @@ body {
 .projects-title {
   font-size: 2em;
   text-align: center;
-/*  padding: 0.2em;*/
+  padding: 0.8em;
 }
 
 .projects-container {
@@ -116,7 +112,7 @@ body {
 .project-tile {
   text-align: center;
   width: 400px;
-  height: 350px;
+  height: 250px;
   text-decoration: none;
 }
 
