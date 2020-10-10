@@ -114,6 +114,11 @@ body {
   width: 400px;
   height: 250px;
   text-decoration: none;
+	transition: all 0.5s linear;
+}
+
+.project-tile:hover {
+	transform: scale(1.075);
 }
 
 .project-image {
