@@ -1,6 +1,6 @@
 # Responsive Web Design Projects - Build a Tribute Page  
 
-## Click to see [my tribute page](https://codepen.io/sroma/full/MMOPEZ) on codepen.io
+## <a href="https://codepen.io/srom/full/MMOPEZ" target="_blank">My tribute page</a> on codepen.io
 
 * **Objective:** Build a [codepen.io](https://codepen.io) app that is functionally similar to this: [FCC: Tribute Page](https://codepen.io/freeCodeCamp/full/zNqgVx)  
 * Fulfill the below user stories and get all of the tests to pass. Give it your own personal style.  
