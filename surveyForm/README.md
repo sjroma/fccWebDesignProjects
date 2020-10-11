@@ -1,6 +1,6 @@
 # Responsive Web Design Projects - Build a Survey Form
 
-## Click to see [my Survey Form](https://codepen.io/sroma/full/gNXVaJ) on codepen.io
+## [My Survey Form](https://codepen.io/sroma/full/gNXVaJ) on codepen.io
 
 * **Objective:** Build a [CodePen.io](https://codepen.io) app that is functionally similar to this: [FCC: Survey Form](https://codepen.io/freeCodeCamp/full/VPaoNP).  
 * Fulfill the below user stories and get all of the tests to pass. Give it your own personal style.  
@@ -9,7 +9,7 @@
 
 * **User Story #1:** I can see a title with `id="title"` in H1 sized text.  
 * **User Story #2:** I can see a short explanation with `id="description"` in P sized text.  
-* **User Story #3:** I can see a form with `id="survey-form"`.  
+* **User Story #3:** I can see a `form` with `id="survey-form"`.  
 * **User Story #4:** Inside the form element, I am required to enter my name in a field with `id="name"`.  
 * **User Story #5:** Inside the form element, I am required to enter an email in a field with `id="email"`.  
 * **User Story #6:** If I enter an email that is not formatted correctly, I will see an HTML5 validation error.  
@@ -23,6 +23,9 @@
 * **User Story #14:** Inside the form element, I can select several fields from a series of checkboxes, each of which must have a `value` attribute.  
 * **User Story #15:** Inside the form element, I am presented with a `textarea` at the end for additional comments.  
 * **User Story #16:** Inside the form element, I am presented with a button with `id="submit"` to submit all my inputs.   
-* Once done, submit the URL to your working project with all its tests passing.
+
+You can build your project by forking [this CodePen pen](https://codepen.io/freeCodeCamp/pen/MJjpwO). Or you can use this CDN link to run the tests in any environment you like: `https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js`.  
+
+Once done, submit the URL to your working project with all its tests passing.  
 
 ##### ~/freeCodeCamp/fccWebDesignProjects/surveyForm  
