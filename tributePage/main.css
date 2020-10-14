@@ -5,7 +5,7 @@
 }
 
 body {
-  background-color: #e0b78d; /* burlywood */
+  background-color: #e0b78d;  /* burlywood */
   background-image: url(images/parchment.jpg);
   background-size: cover;
   font-family: "Raleway", sans-serif;
@@ -13,7 +13,7 @@ body {
 }
 
 #main {
-  margin: 1.3em 0.5em 1.3em 0.5em;
+  margin: 1.3em 0.5em;
 }
 
 #title {
@@ -22,7 +22,7 @@ body {
 }
 
 #img-div {
-	margin: 1em 2.5em 1em 2.5em;
+  margin: 1em 2.5em;
 }
 
 #image {
@@ -36,7 +36,12 @@ body {
 
 #img-caption {
   padding-top: 5px;
-	text-transform: uppercase;
+  text-transform: uppercase;
+}
+
+.book-title {
+  font-style: italic;
+  font-weight: 500;
 }
 
 #tribute-info {
@@ -44,10 +49,6 @@ body {
   margin: 0 auto;
   max-width: 75%;
   min-width: 85%;
-}
-
-i {
-  font-weight: 500;
 }
 
 ul {
@@ -58,17 +59,21 @@ ul {
   padding-left: 2.5em;
 }
 
+.bold-date {
+  font-weight: 700;
+}
+
 blockquote {
   font-weight: 700;
-	margin: 1em 2.5em 1em 2.5em;
+  margin: 1em 2.5em;
 }
 
 .quote {
-	margin: 0.5em;
+  margin: 0.5em;
 }
 
 .quoter {
-	margin: 0.5em;
+  margin: 0.5em;
 }
 
 #tribute-link {
