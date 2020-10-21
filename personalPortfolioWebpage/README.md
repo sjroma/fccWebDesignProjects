@@ -1,6 +1,6 @@
 # Responsive Web Design Projects - Build a Personal Portfolio Webpage  
 
-## Click to see [my Personal Portfolio Webpage](https://codepen.io/sroma/full/yLBMrYK) on codepen.io
+## [My Personal Portfolio Webpage](https://codepen.io/sroma/full/yLBMrYK) on codepen.io
 
 * **Objective:** Build a CodePen.io app that is functionally similar to this: [FCC: Personal Portfolio](https://codepen.io/freeCodeCamp/full/zNBOYG).  
 * Fulfill the below user stories and get all of the tests to pass. Give it your own personal style.  
@@ -18,7 +18,9 @@
 * **User Story #9:** My portfolio should have at least one media query.  
 * **User Story #10:** The height of the welcome section should be equal to the height of the viewport.
 * **User Story #11:** The navbar should always be at the top of the viewport.  
-* You can build your project by forking this CodePen pen. Or you can use this CDN link to run the tests in any environment you like: `<script scr="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>`  
-* Once you're done, submit the URL to your working project with all its tests passing.
+
+You can build your project by forking [this CodePen pen](https://codepen.io/freeCodeCamp/pen/MJjpwO). Or you can use this CDN link to run the tests in any environment you like: `<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>` 
+
+Once you're done, submit the URL to your working project with all its tests passing.
 
 ##### ~/freeCodeCamp/fccWebDesignProjects/personalPortfolioWebpage  
