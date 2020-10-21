@@ -1,6 +1,6 @@
 # Responsive Web Design Projects - Build a Technical Documentation Page  
 
-## Click to see my [Technical Documentation Page](https://codepen.io/sroma/full/rXJWNE) on codepen.io  
+## [My Technical Documentation Page](https://codepen.io/sroma/full/rXJWNE) on codepen.io  
 
 * **Objective:** Build a codepen.io app that is functionally similar to this: [FCC: Technical Documentation Page](https://codepen.io/freeCodeCamp/full/NdrKKL).  
 * Fulfill the below user stories and get all of the tests to pass. Give it your own personal style.  
@@ -22,7 +22,9 @@
 * **User Story #13:** When I click on a `navbar` element, the page should navigate to the corresponding section of the `main-doc` element (e.g. If I click on a `nav-link` element that contains the text "Hello world", the page navigates to a `section` element that has that id and contains the corresponding `header`.  
 * **User Story #14:** On regular sized devices (laptops, desktops), the element with `id="navbar"` should be shown on the left side of the screen and should always be visible to the user.  
 * **User Story #15:** My Technical Documentation page should use at least one media query.  
-You can build your project by forking this CodePen pen. Or you can use this CDN link to run the tests in any environment you like: `<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>`   
-* Once done, submit the URL to your working project with all its tests passing.
+
+You can build your project by forking [this CodePen pen](https://codepen.io/freeCodeCamp/pen/MJjpwO). Or you can use this CDN link to run the tests in any environment you like: `<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>`   
+
+Once done, submit the URL to your working project with all its tests passing.
 
 ##### ~/freeCodeCamp/fccWebDesignProjects/techDocPage  
