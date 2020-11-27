@@ -25,6 +25,10 @@ body {
   display: flex;
 }
 
+li {
+  list-style-type: none;
+}
+
 .links a {
   display: block;
   color: #2b2f26;
@@ -114,16 +118,17 @@ body {
 
 .project-tile {
   text-align: center;
-  width: 400px;
-  height: 250px;
+  width: 22.25em;
+  height: 12.5em;
   text-decoration: none;
+  margin-bottom: 3em;
 	transition: all 0.5s linear;
 }
 
 .project-image {
   border-radius: 0.5em;
-  width: 356px;
-  height: 200px;
+  width: 22.25em;
+  height: 12.5em;
   transition: all 0.5s linear;
 }
 
@@ -138,7 +143,12 @@ body {
   background: rgba(38, 38, 38, 0.75);
   color: lightgrey;
   margin: auto;
-  width: 356px;
+  max-width: 22.25em;
+}
+
+.project-title:hover {
+  color: rgba(38, 38, 38, 0.75);
+  background: lightgrey;
 }
 
 .contact-container {
