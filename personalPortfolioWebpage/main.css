@@ -41,7 +41,7 @@ li {
   transition: all .5s linear;
 }
 
-.links a:hover {
+.links a:hover, .links a:focus {
   background: rgba(38, 38, 38, 0.75);
   color: lightgrey;
   transform: scale(1.075);
@@ -132,7 +132,7 @@ li {
   transition: all 0.5s linear;
 }
 
-.project-tile:hover {
+.project-tile:hover, .project-tile:focus {
   transform: scale(1.075);
 }
 
@@ -146,7 +146,7 @@ li {
   max-width: 22.25em;
 }
 
-.project-title:hover {
+.project-title:hover, .project-title:focus {
   color: rgba(38, 38, 38, 0.75);
   background: lightgrey;
 }
@@ -174,7 +174,7 @@ li {
   transition: all .15s ease-in-out;
 }
 
-.contact-link:hover {
+.contact-link:hover, .contact-link:focus {
   transition: all .15s ease-in-out;
   transform: scale(1.5);
 }
