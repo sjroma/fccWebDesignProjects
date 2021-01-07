@@ -33,7 +33,11 @@ body {
 }
 
 fieldset {
+  column-count: 1;
   line-height: 1.5;
+  border-radius: 4px;
+  display: inline-grid;
+  text-align: left;
 }
 
 #description {
@@ -84,12 +88,6 @@ b {
   max-width: 75%;
   min-width: 95%;
   padding-top: 30px;
-}
-
-.fieldset {
-  border-radius: 4px;
-  display: inline-grid;
-  text-align: left;
 }
 
 .protective-gear,
