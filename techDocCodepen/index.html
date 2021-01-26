@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Codepen Technical Documentation</title>
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/8102a39f82.js" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" type="text/css" href="main.css">
+
+</head>
+
+<body>
+  <nav id="navbar">
+    <div class="container-fluid nav-bar">
+      <header class="header-title">C<i class="fab fa fa-codepen"></i>depen - the Pen Editor</header>
+      <ul class="links-list">
+        <li><a class="nav-link" href="#Create_a_Pen">Create a Pen</a></li>
+        <li><a class="nav-link" href="#Saving_Changes">Saving Changes</a></li>
+        <li><a class="nav-link" href="#Pen_Editor_Settings">Pen Editor Settings</a></li>
+        <li><a class="nav-link" href="#Pen_Views_Explained">Pen Views Explained</a></li>
+        <li><a class="nav-link" href="#Reference">Reference</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main id="main-doc">
+    <section class="main-section first-section" id="Create_a_Pen">
+      <header>
+        <h2>Create a Pen</h2>
+      </header>
+      <article>
+        <p>To create a Pen you must have a <a href="https://codepen.io" target="_blank">codepen</a> account and you must be logged in.</p>
+        <p>Select the Create Pen link to open the Editor view and start writing the code to create a Pen. The standard editors are <abbr title="HyperText Markup Language (HTML) is a descriptive language that specifies webpage structure.">HTML</abbr>, <abbr title="CSS (Cascading Style Sheets) is a declarative language that controls how webpages look in a browser.">CSS</abbr> and <abbr title="JavaScript is a scripting or programming language that allows you to implement complex features on web pages">JavaScript</abbr>. As you write in the editors the result is shown in the preview area.</p>
+        <p>The free version of codepen allows only one project but an unlimited number of Pens. For this reason the <a href="https://freecodecamp.org" target="_blank">freeCodeCamp</a> curriculum suggests the use of pens to do the projects for their Responsive Web Design certification. It should be noted that the freeCodeCamp example projects are Pens, and the freeCodeCamp test suite is in a Pen that users can fork.</p>
+        <h4>HTML Editor</h4>
+        <p class="subsection">This editor requires only the code that would go between the <code>body</code> tags. For anything outside the <code>body</code> element click the gear icon in the upper left. As an alternate, click the <b>Settings</b> button and choose <b>HTML</b> from the Pen Settings column.</p>
+        <p class="subsection">The <a href="#html-settings">HTML Settings</a> article has information on personalizing this editor.</p>
+        <h4>CSS Editor</h4>
+        <p class="subsection">This is the same as an external stylesheet. All CSS selectors are coded here producing the CSS Ruleset for the Pen.</p>
+        <p class="subsection">The <a href="#css-settings">CSS Settings</a> article has information on personalizing this editor.</p>
+        <h4>JS Editor</h4>
+        <p class="subsection">The <a href="#js-settings">JS Settings</a> article has information on personalizing this editor.</p>
+      </article>
+    </section>
+
+    <section class="main-section" id="Saving_Changes">
+      <header>
+        <h2>Saving Changes</h2>
+      </header>
+      <article>
+        <p>Saving a new Pen or saving changes to an existing Pen is as easy as clicking the <b>Save</b> button after starting the creation of a new Pen or when editing an existing one.</p>
+        <p>It should be noted that when first creating a new Pen or working on an existing one, Autosave is off by default. Once the Save button is clicked, Autosave is enabled and will stay enabled until the Pen is closed. Autosave is on a timer. This means that not every keystroke is saved instantly. The timing trigger kicks off to save your work so data loss is not common but, it is possible that some loss may occur.</p>
+        <p>Even with Autosave on user's can, and should, use the <b>Save</b> button to save their work.</p>
+        <h4>Unsaved Work</h4>
+        <p class="subsection">Codepen will give a warning:</p>
+        <ul>
+          <li>when attempting to leave a Pen using the browser buttons</li>
+          <li>when attempting to close the browser window / tab</li>
+          <li>when attempting to refresh a Pen that has unsaved work</li>
+        </ul>
+        <p class="subsection">If the user leaves or refreshes the page anyway, changes will not be saved.</p>
+      </article>
+    </section>
+
+    <section class="main-section" id="Pen_Editor_Settings">
+      <header>
+        <h2>Pen Editor Settings</h2>
+      </header>
+      <article>
+        <h4 id="html-settings">HTML Settings</h4>
+        <p class="subsection">Click the gear icon in the upper left of the Editor to</p>
+        <ul class="preprocesslist">
+          <li>select an <b>HTML Preprocessor</b> such as;
+            <ul class="preprocesslist">
+              <li><span class="preprocess">None</span> (default)</li>
+              <li><span class="preprocess">Haml</span></li>
+              <li><span class="preprocess">Markdown</span></li>
+              <li><span class="preprocess">Slim</span></li>
+              <li><span class="preprocess">Pug</span></li>
+            </ul>
+          </li>
+          <li><b>Add Class(es) to &lt;HTML&gt;</b>
+            <ul class="preprocesslist">
+              <li>In CodePen, whatever you write in the HTML editor is what goes within the &lt;body&gt; tags in a <a href="https://www.sitepoint.com/a-basic-html5-template/" target="_blank">basic HTML5 template</a>. You don't have access to higher-up elements like the &lt;html&gt; tag. If you want to add classes there that can affect the whole document, this is the place to do it.</li>
+            </ul>
+          </li>
+          <li>Access the <b>Stuff for &lt;head&gt;</b> box to add <code>head</code> elements such as
+            <ul class="preprocesslist">
+              <li><code><b>meta</b></code> tags, for example: <code>&lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;</code></li>
+              <li>A <code><b>title</b></code> for the document</li>
+              <li>A <code><b>link</b></code> to a font, for example: <code>&lt;link href="https://fonts.googleapis.com/css2?family=Roboto&amp;display=swap" rel="stylesheet"&gt;</code></li>
+            </ul>
+          </li>
+        </ul>
+
+        <h4 id="css-settings">CSS Settings</h4>
+        <p class="subsection">Click the gear icon in the upper left of the Editor to</p>
+        <ul class="preprocesslist">
+          <li>select a <b>CSS Preprocessor</b> such as
+            <ul class="preprocesslist">
+              <li><span class="preprocess">None</span> (default)</li>
+              <li><span class="preprocess">Less</span></li>
+              <li><span class="preprocess">SCSS</span></li>
+              <li><span class="preprocess">Sass</span></li>
+              <li><span class="preprocess">Stylus</span></li>
+              <li><span class="preprocess">PostCSS</span></li>
+            </ul>
+          </li>
+          <li>select a <b>CSS Base</b> using either
+            <ul class="preprocesslist">
+              <li><span class="preprocess">Normalize</span></li>
+              <li><span class="preprocess">Reset</span></li>
+              <li><span class="preprocess">Neither</span></li>
+            </ul>
+          </li>
+          <li>set <b>Vendor Prefixing</b> using either
+            <ul class="preprocesslist">
+              <li><span class="preprocess">Autoprefixer</span></li>
+              <li><span class="preprocess">Prefixfree</span></li>
+              <li><span class="preprocess">Neither</span></li>
+            </ul>
+          </li>
+          <li><b>Add External Stylesheets / Pens</b>
+            <ul class="preprocesslist">
+              <li>Any URL's added here will be added as <code>link</code>s in order, and before the CSS in the editor. If you link to another Pen, it will include the CSS from that Pen. If the preprocessor matches, it will attempt to combine them before processing.</li>
+            </ul>
+          </li>
+        </ul>
+
+        <h4 class="js-settings">JS Settings</h4>
+        <p class="subsection">Click the gear icon in the upper left of the Editor to set</p>
+        <ul class="preprocesslist">
+          <li>a <b>JavaScript Preprocessor</b> such as
+            <ul class="preprocesslist">
+              <li><span class="preprocess">None</span> (default)</li>
+              <li><span class="preprocess">Babel</span></li>
+              <li><span class="preprocess">TypeScript</span></li>
+              <li><span class="preprocess">CoffeeScript</span></li>
+              <li><span class="preprocess">LiveScript</span></li>
+            </ul>
+          </li>
+          <li><b>Add External Scripts / Pens</b>
+            <ul class="preprocesslist">
+              <li>Any URL's added here will be added as &lt;script&gt;s in order, and run <i>before</i> the JavaScript in the editor. You can use the URL of any other Pen and it will include the JavaScript from that Pen.</li>
+            </ul>
+          </li>
+          <li><b>Add Packages</b>
+          <ul class="preprocesslist">
+            <li>Search for and use JavaScript packages from <a href="https://npmjs.com" target="_blank">npm</a> here. By selecting a package, an <code>import</code> statement will be added to the top of the JavaScript editor for this package.</li>
+          </ul></li>
+        </ul>
+
+        <h4 class="additionsettings">Additional Settings</h4>
+        <p class="subsection">Click the <b>Settings</b> button to access additional settings such as</p>
+        <ul class="addlsettings">
+          <li><b>Pen Details</b> - Give a Pen Title, a Pen Description and add Tags</li>
+          <li><b>Privacy</b> - PRO only</li>
+          <li><b>Behavior</b> - Settings to Save Automatically, Auto-Update the Preview, Format on Save</li>
+          <li><b>Editor</b> - Indent code, Code Indent width</li>
+          <li><b>Template</b> - Make a Template or select Template URL</li>
+          <li><b>Screenshot</b> - PRO only</li>
+        </ul>
+      </article>
+    </section>
+
+    <section class="main-section" id="Pen_Views_Explained">
+      <header>
+        <h2>Pen Views Explained</h2>
+      </header>
+      <article>
+        <ul class="viewlist">
+          <li><span class="viewsname">Editor view</span> is the most important page on CodePen. Here using the standard editors, HTML, CSS and JavaScript is where users create, or edit, a Pen.</li>
+          <li><span class="viewsname">Details view</span> shows a large preview of the Pen. The code can be turned on to view but not edit. This view contains more social information about the Pen such as;
+            <ul class="viewlist">
+              <li>Who liked it</li>
+              <li>Any comments that were made</li>
+              <li>Sharing buttons</li>
+              <li>The License</li>
+              <li>and more</li>
+            </ul>
+          </li>
+          <li><span class="viewsname">Full Page view</span> is a way to look at, or share, a Pen that uses almost the whole screen to show the preview. This view does not show code.</li>
+          <li><span class="viewsname">Debug mode</span> is for looking at the Pen full-screen with no iframe. The view opens in a new tab and is only for you, the logged user so it is not great for sharing but it is great for debugging.</li>
+        </ul>
+        <p>The following are available to PRO (paid) accounts and are mentioned, without elaboration, in this document.</p>
+        <ul class="viewlist">
+          <li><span class="viewsname">Live view</span> PRO users only</li>
+          <li><span class="viewsname">Collab Mode</span> and <span class="viewsname">Professor Mode</span> are views available to PRO users and are used for working in real time with other people.</li>
+          <li><span class="viewsname">Presentation mode</span> is another PRO user view used for viewing the Pen Editor on an overhead projector.</li>
+        </ul>
+      </article>
+    </section>
+
+    <section class="main-section" id="Reference">
+      <header>
+        <h2>Reference</h2>
+      </header>
+      <article>
+        <p>The documentation for this page was gathered from <a href="https://blog.codepen.io/documentation/" target="_blank">Codepen's Official Documentation</a>.</p>
+        <p>Disclaimer: The information here is not comprehensive. There is much more in the official document. This was a project to create a technical document while meeting certain user story requirements. The limited information here meets those requirements.</p>
+      </article>
+    </section>
+
+  </main>
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+
+</html>
