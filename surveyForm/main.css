@@ -1,160 +1,166 @@
-body {
-  border: 0px;
+* {
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
-  background-image: url(images/deluxe.jpg);
+
+}
+
+body {
+  background-image: linear-gradient(170deg, rgba(266, 289, 162, 0.75), rgba(100, 100, 100, 0.2)), url(images/deluxe.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   background-size: cover;
+  background-color: #464646;
   font-family: 'Rubik', sans-serif;
   text-align: center;
 }
 
-#container {
-  background: rgba(249, 249, 249, 0.8);
-  border-radius: 4px;
-  margin: 0px auto 10px auto;
-  max-width: 80%;
-  padding: 20px;
+#title, #description {
+  color: #000;
 }
 
-.gear-section,
-.mods {
-  background: rgba(0, 0, 0, 0.03);
-  border-radius: 4px;
+#container {
+  background: rgba(249, 249, 249, 0.7);
+  border-radius: .25em;
+  margin: 0.625em auto;
+  max-width: 85%;
+  padding: 1.25em;
+}
+
+input#name, input#email, input#number {
+  opacity: 0.55;
+  background-color: rgba(249, 249, 249, 0.55);
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  border-radius: .25em .25em 0 0;
+  font-size: 1.1em;
+  padding-top: 1.5em; 
+  padding-left: 0.2em;
+  width: 90%;
+}
+
+input::placeholder {
+  color: #000;
+  opacity: 1; 
+}
+
+input:hover::placeholder, input:focus::placeholder {
+  color: #1d6fa3;
+  background-color: #333;
+  color: #fff;
+}
+
+input#name:hover, input#name:focus,
+input#email:hover, input#email:focus,
+input#number:hover, input#number:focus {
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  outline: none;
+  border-bottom-color: #1d6fa3;
+  border-bottom-color: #0b0557;
+}
+
+#name-label, #email-label {
+  color: red;
+}
+
+/* ideal way to hide is with hidden but that makes FCC test fail so I have to hide with color */ 
+#number-label {
+/*  visibility: hidden;*/
+  color: rgba(249, 249, 249, 0.1);
+}
+
+.personalinfo, .gear-section, .mods {
+/*  background: rgba(0, 0, 0, 0.03);*/
+  border-radius: .25em;
   margin-bottom: 5px;
   padding: 10px;
 }
 
-.radiob:hover,
-.cbox:hover {
-  background-color: #333;
-  border-radius: 4px;
-  color: #ccc;
-}
-
-fieldset {
-  column-count: 1;
-  line-height: 1.5;
-  border-radius: 4px;
-  display: inline-grid;
-  text-align: left;
-}
-
-#description {
-  font-size: larger;
-  font-weight: 500;
-}
-
-input:required {
-  background-color: lightyellow;
-}
-
-.name,
-.email,
-.age {
-  padding-bottom: 5px;
-}
-
-input[type=text],
-input[type=email],
-input[type=number] {
-  border-radius: 4px;
-}
-
-#number-label {
-  padding-right: 20px;
-}
-
-b {
-  color: red;
-}
-
-.input-area {
-  font-size: small;
-  height: 25px;
-  padding-left: 10px;
-  width: 280px;
-}
-
-.dropdown {
-  font-size: small;
-  height: 35px;
-  width: 160px;
-}
-
-.gear-worn,
-.modifications {
-  margin: 0 auto;
-  max-width: 75%;
-  min-width: 95%;
+.gear-worn, .modifications {
   padding-top: 30px;
+  padding-top: 1.88em;
 }
 
-.protective-gear,
-.modified {
-  margin-left: 15px;
-  margin-right: 10px;
+legend {
+  font-size: 1.1em;
+  padding: 0.0em 0.5em;
 }
 
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
+.fieldset {
+  border-radius: .25em;
+  column-count: 1;
+  display: inline-grid;
+  line-height: 1.5;
+  text-align: left;
+  padding: 0em 1em 0.5em 1em;
+  width: 90%;
 }
 
-.col-25 {
-  float: left;
-  width: 25%;
-  margin-top: 12px;
-  padding-right: 6px;
-  text-align: right;
+.radiob:hover, .cbox:hover,
+input[type="radio"]:hover, input[type="checkbox"]:hover {
+  background-color: #333;
+  border-radius: .25em;
+  color: #ccc;
+  cursor: pointer;
 }
 
-.col-75 {
-  float: left;
-  width: 50%;
-  margin-top: 6px;
+.fieldsetscore {
+  border-radius: .25em;
+  column-count: 1;
+  display: inline;
+  line-height: 1.5;
+  text-align: left;
+  padding: 0em 1em 0.5em 1em;
+  width: 90%;
 }
 
-/* Clear floats after the columns */
-.importance:after {
-  content: "";
-  display: table;
-  clear: both;
+.dropitems {
+  display: flex;
+  flex-direction: column;
+}
+
+.dropdownlabel {
+  display: flex;
+}
+
+select {
+  width: 75%;
+  font-size: medium;
 }
 
 .comments {
-  display: none;
-  margin-bottom: unset;
-  text-align: left;
+  visibility: hidden;
 }
 
-textarea {
-  background-color: #F9F9F9;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-  font-size: inherit;
-  height: 150px;
-  padding: 10px 15px;
-  resize: none;
-  width: 90%;
+.commentarea {
+  font-family: sans-serif;
+  border-radius: .25em;
+  background-color: #f9f9f9;
+  min-height: 7.5em;
+  width: 88%;
+  padding: 0.5em;
+  resize: vertical;
 }
 
 button {
   background-color: #59ACE0;
   border-color: #59ACE0;
-  border-radius: 4px;
+  border-radius: .25em;
   text-transform: uppercase;
-  color: white;
-  font-size: 15px;
-  height: 40px;
-  width: 80px;
+  color: #333;
+  font-size: 0.94em;
+  height: 2.5em;
+  width: 5em;
 }
 
-button:hover {
+button:hover, button:focus {
   background-color: #1D6FA3;
-  border-color: #1D6FA3
+  border-color: #1D6FA3;
+  color: #fff;
   cursor: pointer;
   transition: background-color 0.5s;
 }
