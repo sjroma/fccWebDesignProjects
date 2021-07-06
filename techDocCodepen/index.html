@@ -24,20 +24,20 @@
   <nav id="navbar">
     <div class="container-fluid nav-bar">
       <header class="header-title">C<i class="fab fa fa-codepen"></i>depen - the Pen Editor</header>
-      <ul class="links-list">
-        <li><a class="nav-link" href="#Create_a_Pen">Create a Pen</a></li>
-        <li><a class="nav-link" href="#Saving_Changes">Saving Changes</a></li>
-        <li><a class="nav-link" href="#Pen_Editor_Settings">Pen Editor Settings</a></li>
-        <li><a class="nav-link" href="#Pen_Views_Explained">Pen Views Explained</a></li>
-        <li><a class="nav-link" href="#Reference">Reference</a></li>
+      <ul class="toc-entries">
+        <li><a class="nav-link" href="#create_a_pen">Create a Pen</a></li>
+        <li><a class="nav-link" href="#saving_changes">Saving Changes</a></li>
+        <li><a class="nav-link" href="#pen_editor_settings">Pen Editor Settings</a></li>
+        <li><a class="nav-link" href="#pen_views_explained">Pen Views Explained</a></li>
+        <li><a class="nav-link" href="#reference">Reference</a></li>
       </ul>
     </div>
   </nav>
 
   <main id="main-doc">
-    <section class="main-section first-section" id="Create_a_Pen">
+    <section class="main-section first-section" id="create_a_pen">
       <header>
-        <h2>Create a Pen</h2>
+        <h2 class="section-title">Create a Pen</h2>
       </header>
       <article>
         <p>To create a Pen you must have a <a href="https://codepen.io" target="_blank">codepen</a> account and you must be logged in.</p>
@@ -47,16 +47,16 @@
         <p class="subsection">This editor requires only the code that would go between the <code>body</code> tags. For anything outside the <code>body</code> element click the cog icon in the upper left. As an alternate, click the <b>Settings</b> button and choose <b>HTML</b> from the Pen Settings column.</p>
         <p class="subsection">The <a href="#html-settings">HTML Editor Settings</a> article has information on personalizing this editor.</p>
         <h4>CSS Editor</h4>
-        <p class="subsection">This is the same as an external stylesheet. All CSS selectors are coded here producing the CSS Ruleset for the Pen.</p>
+        <p class="subsection">This is the same as an external stylesheet. CSS selectors, and their declarations, are coded here producing the CSS Ruleset for the Pen.</p>
         <p class="subsection">The <a href="#css-settings">CSS Editor Settings</a> article has information on personalizing this editor.</p>
         <h4>JS Editor</h4>
         <p class="subsection">The <a href="#js-settings">JS Editor Settings</a> article has information on personalizing this editor.</p>
       </article>
     </section>
 
-    <section class="main-section" id="Saving_Changes">
+    <section class="main-section" id="saving_changes">
       <header>
-        <h2>Saving Changes</h2>
+        <h2 class="section-title">Saving Changes</h2>
       </header>
       <article>
         <p>Saving a new Pen or saving changes to an existing Pen is as easy as clicking the <b>Save</b> button after starting the creation of a new Pen or when editing an existing one.</p>
@@ -73,9 +73,9 @@
       </article>
     </section>
 
-    <section class="main-section" id="Pen_Editor_Settings">
+    <section class="main-section" id="pen_editor_settings">
       <header>
-        <h2>Pen Editor Settings</h2>
+        <h2 class="section-title">Pen Editor Settings</h2>
       </header>
       <article>
         <h4 id="html-settings">HTML Editor Settings</h4>
@@ -133,7 +133,7 @@
           </li>
           <li><b>Add External Stylesheets / Pens</b>
             <ul class="preprocesslist">
-              <li>Any URL's added here will be added as <code>link</code>s in order, and before the CSS in the editor. If you link to another Pen, it will include the CSS from that Pen. If the preprocessor matches, it will attempt to combine them before processing.</li>
+              <li>Any URL's added here will be added as <code>&lt;link&gt;</code>s in order, and before the CSS in the editor. If you link to another Pen, it will include the CSS from that Pen. If the preprocessor matches, it will attempt to combine them before processing.</li>
             </ul>
           </li>
         </ul>
@@ -152,13 +152,14 @@
           </li>
           <li><b>Add External Scripts / Pens</b>
             <ul class="preprocesslist">
-              <li>Any URL's added here will be added as &lt;script&gt;s in order, and run <i>before</i> the JavaScript in the editor. You can use the URL of any other Pen and it will include the JavaScript from that Pen.</li>
+              <li>Any URL's added here will be added as <code>&lt;script&gt;</code>s in order, and run <i>before</i> the JavaScript in the editor. You can use the URL of any other Pen and it will include the JavaScript from that Pen.</li>
             </ul>
           </li>
           <li><b>Add Packages</b>
-          <ul class="preprocesslist">
-            <li>Search for and use JavaScript packages from <a href="https://npmjs.com" target="_blank">npm</a> here. By selecting a package, an <code>import</code> statement will be added to the top of the JavaScript editor for this package.</li>
-          </ul></li>
+            <ul class="preprocesslist">
+              <li>Search for and use JavaScript packages from <a href="https://npmjs.com" target="_blank">npm</a> here. By selecting a package, an <code>import</code> statement will be added to the top of the JavaScript editor for this package.</li>
+            </ul>
+          </li>
         </ul>
 
         <h4 class="additionsettings">Additional Settings</h4>
@@ -174,13 +175,17 @@
       </article>
     </section>
 
-    <section class="main-section" id="Pen_Views_Explained">
+    <section class="main-section" id="pen_views_explained">
       <header>
-        <h2>Pen Views Explained</h2>
+        <h2 class="section-title">Pen Views Explained</h2>
       </header>
       <article>
         <ul class="viewlist">
-          <li><span class="viewsname">Editor view</span> is the most important page on CodePen. Here using the standard editors, HTML, CSS and JavaScript is where users create, or edit, a Pen.</li>
+          <li><span class="viewsname">Editor view</span> is the most important page on CodePen. Here using the HTML, CSS and JavaScript editors is where users create, or edit, a Pen.
+          <ul class="viewlist">
+            <li>The Iframe for this view also contains buttons along the bottom allowing the user to see the "Console" when running JavaScript, add "Comments", view shortcut "Keys" and "Delete", "Fork" or "Export" the Pen.</li>
+          </ul>
+          </li>
           <li><span class="viewsname">Details view</span> shows a large preview of the Pen. The code can be turned on to view but not edit. This view contains more social information about the Pen such as;
             <ul class="viewlist">
               <li>Who liked it</li>
@@ -202,9 +207,9 @@
       </article>
     </section>
 
-    <section class="main-section" id="Reference">
+    <section class="main-section" id="reference">
       <header>
-        <h2>Reference</h2>
+        <h2 class="section-title">Reference</h2>
       </header>
       <article>
         <p>The documentation for this page was gathered from <a href="https://blog.codepen.io/documentation/" target="_blank">Codepen's Official Documentation</a>.</p>
