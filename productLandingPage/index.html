@@ -4,86 +4,80 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>fcc - Product Landing</title>
-
+  <title>fCC - Product Landing</title>
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-  <style>
-
-  </style>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Pirata+One&display=swap" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="main.css">
 </head>
 
 <body>
-  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
-  <div class="wrapper">
 
-    <div class="flex-nav">
-      <header id="header">
-        <img id="header-img" src="http://">
-        <nav id="nav-bar">
-          <div class="navbar">
-            <span><a class="nav-link" href="#features">Features</a></span>
-            <span><a class="nav-link" href="#pirate-games">Activities</a></span>
-            <span><a class="nav-link" href="#media">Pirate's Life</a></span>
-          </div>
-        </nav>
-      </header>
-    </div>
-
-    <section class="features">
-      <h2></h2>
-      <h3><a id="features"><i class="fa fa-3x fa-skull-crossbones"></i>
-          Begining/Intermediate Sword Fighting</a></h3>
-
-      <h3><a id="features"><i class="fa fa-3x fa-anchor"></i>
-          Treasure Map Fundamentals</a></h3>
-
-      <h3><a id="features"><i class="fa fa-3x fa-crow"></i>
-          Training your Parrot</a></h3>
-    </section>
-
-    <section class="activities">
-      <h2 id="pirate-games">Pirate Games and Activies</h2>
-      <div class="box-container">
-        <div id="box-1">Beginner Sword Fighting</div>
-        <div id="box-2">Treasure Map Reading</div>
-        <div id="box-3">Teaching your Parrot</div>
-        <div id="box-4"></div>
-        <div id="box-5"></div>
+  <div class="flex-nav">
+    <header id="header">
+      <div class="logo">
+        <img id="header-img" src="https://raw.githubusercontent.com/sjroma/fccWebDesignProjects/master/productLandingPage/images/crossedPirateSwords.jpg" alt="crossed swords logo">
       </div>
+      <!--</header>-->
+
+
+      <nav id="nav-bar">
+        <ul class="toc-links">
+          <li><a class="nav-link" href="#features">Features</a></li>
+          <li><a class="nav-link" href="#pirate-games">Activities</a></li>
+          <li><a class="nav-link" href="#media">Pirate's Life</a></li>
+          <li><a class="nav-link" href="#signup">Newsletter</a></li>
+        </ul>
+      </nav>
+    </header>
+
+  </div>
+
+  <div class="container">
+    <!--    <h1 class="banner">Pirate Fantasy Camp</h1>-->
+
+    <section class="features" id="features">
+      <h1 class="banner">Pirate Fantasy Camp</h1>
+      <!--      <h2>Features</h2>-->
     </section>
 
-    <section class="video">
-      <h2 id="media">It's a Pirate's Life for Me</h2>
-      <iframe id="video" width="420" height="345" src="https://www.youtube.com/embed/u3uCfu_Yh77D4?autoplay=0&loop=0&playlist=uCfu_Yh77D4" frameborder="0"></iframe>
+    <section class="activities" id="pirate-games">
+      <h2>Activities</h2>
     </section>
 
-    <section class="signup">
-      <p class="signup-title">Sign up for more information about departure times, locations and voyage lengths</p>
-      <form id="form" class="signup" action="https://www.freecodecamp.com/email-submit">
-        <div class="name">
-          <label for="name" id="name-label"><em>*</em> Name</label>
-          <input class="input-area" id="name" type="text" placeholder="Your name" required>
+    <section class="video" id="media">
+      <h2>Pirate's Life</h2>
+      <!--      <iframe id="video" src="https://www.youtube.com/embed/4o5cGTnP4OY" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>-->
+      <iframe id="video" width="420" height="345" src="https://www.youtube.com/embed/u3uCfu_Yh77D4?autoplay=0&loop=0&playlist=uCfu_Yh77D4"></iframe>
+    </section>
+
+    <section class="signup" id="signup">
+      <h2>Newsletter</h2>
+      <p class="subscribe-text">Subscribe for information about departure times, locations and voyage lengths</p>
+      <form id="form" class="newsletter" action="https://www.freecodecamp.com/email-submit">
+        <div>
+          <input id="name" type="text" name="text" placeholder="Your name" required>
         </div>
-        <div class="email">
-          <label for="email" id="email-label"><em>*</em> Email</label>
-          <input class="input-area" id="email" name="email" type="email" placeholder="Email address" required><br>
+        <div>
+          <input id="email" type="email" name="email" placeholder="Your email address" required>
         </div>
-        <input class="button" type="submit" id="submit" value="Send the scuttlebutt!">
-        <div class="nospam">
-          <h6>You'll never get spam. Unsubscribe at any time.</h6>
+        <div class="submit-button">
+          <input class="button" type="submit" id="submit" value="Send the scuttlebutt!">
+          <p>You'll never get spam. Unsubscribe at any time.</p>
         </div>
       </form>
     </section>
 
     <footer>
-      <p>A Pen by Roma</p>
-      <p>I followed the format in <a href="https://wesbos.com/courses/" target="_blank"> Wes Bos'</a> informative video tutorial <em><b>Mobile Content Reordering with Flexbox</b></em> when creating this page</p>
-      <p>Looks as if <a href="https://codepen.io/freeCodeCamp/full/RKRbwL" target="_blank">FCC's Responsive Web Design Projects - Build a Product Landing Page</a> did also</p>
+      <p>footer content here</p>
+
     </footer>
 
   </div>
+
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </body>
 
 </html>
