@@ -1,8 +1,8 @@
 # Responsive Web Design Projects - Build a Survey Form
 
-## [My Survey Form](https://codepen.io/sroma/full/gNXVaJ) on codepen.io
-
-* **Objective:** Build a [CodePen.io](https://codepen.io) app that is functionally similar to this: [FCC: Survey Form](https://codepen.io/freeCodeCamp/full/VPaoNP).  
+## <a href="https://codepen.io/sroma/full/gNXVaJ" target="_blank">My Survey Form</a> on codepen.io  
+  
+* **Objective:** Build a <a href="https://codepen.io" target="_blank">Codepen.io</a> app that is functionally similar to this: <a href="https://codepen.io/freeCodeCamp/full/VPaoNP" target="_blank">FCC: Survey Form</a>  
 * Fulfill the below user stories and get all of the tests to pass. Give it your own personal style.  
   * You can use HTML, JavaScript, and CSS to complete this project. Plain CSS is recommended because that is what the lessons have covered so far and you should get some practice with plain CSS. You can use Bootstrap or SASS if you choose. Additional technologies (just for example jQuery, React, Angular, or Vue) are not recommended for this project, and using them is at your own risk. Other projects will give you a chance to work with different technology stacks like React. We will accept and try to fix all issue reports that use the suggested technology stack for this project. Happy coding!  
 
@@ -24,7 +24,7 @@
 * **User Story #15:** Inside the form element, I am presented with a `textarea` at the end for additional comments.  
 * **User Story #16:** Inside the form element, I am presented with a button with `id="submit"` to submit all my inputs.   
 
-You can build your project by forking [this CodePen pen](https://codepen.io/freeCodeCamp/pen/MJjpwO). Or you can use this CDN link to run the tests in any environment you like: `https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js`.  
+You can build your project by forking <a href="https://codepen.io/freeCodeCamp/pen/MJjpwO" target="_blank">this CodePen pen</a>. Or you can use this CDN link to run the tests in any environment you like: `https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js`.  
 
 Once done, submit the URL to your working project with all its tests passing.  
 
